@@ -1,0 +1,39 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-boolean-logic">
+  <!-- Defines the element's style and local DOM -->
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 16px;
+      }
+    </style>
+
+    <h1>Boolean Logic</h1>
+      <p>For the ultra adventurous, the EQUALITY TEST portion of a Facer conditional also <strong>supports a maximum of 3 basic Boolean operators in any given formula</strong>. (Basic boolean operators are <code>||</code> and <code>&amp;&amp;</code>). Have fun!</p>
+<p>
+A note about boolean operators in conditionals, it's important to avoid putting parentheses around equality and boolean expressions. Here are some examples:
+</p>
+<p>
+These will be ok:
+</p>
+<code class="good">$ 1 == 1 || 1 == 1 ? 1 : 0 $ </code><br/><br/>
+
+<code class="good">$ (1+1) == (1) || (1) == (1) ? 1 : 0 $</code>
+<p>These will have unexpected results:</p>
+
+<code class="bad">$ (1 == 1) || (1 == 1) ? 1 : 0 $ </code><br/><br/>
+
+<code class="bad">$ (1 == 1 || 1 == 1) ? 1 : 0 $</code>
+
+  </template>
+  <!-- Creates the element's prototype and registers it -->
+  <script>
+    Polymer({
+      is: 'my-boolean-logic'
+    });
+  </script>
+</dom-module>

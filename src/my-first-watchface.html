@@ -1,0 +1,33 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-first-watchface">
+  <!-- Defines the element's style and local DOM -->
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 16px;
+      }
+
+      .card{
+        text-align: center;
+      }
+    </style>
+
+    <h1>The Facer Kitchen Sink Watch Face</h1>
+      <div class="card">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/3-__TsRGfH4" frameborder="0" allowfullscreen>
+        
+      </iframe>
+      </div>
+
+  </template>
+  <!-- Creates the element's prototype and registers it -->
+  <script>
+    Polymer({
+      is: 'my-first-watchface'
+    });
+  </script>
+</dom-module>

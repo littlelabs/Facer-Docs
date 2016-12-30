@@ -14,14 +14,111 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <dom-module id="shared-styles">
   <template>
     <style>
+    body{
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      font-family: Roboto, sans-serif;
+      font-size: 13px;
+      color: rgb(33, 33, 33);
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+
+    h1{
+      font-size: 34px;
+      font-weight: 400;
+      line-height: 40px;
+      margin-bottom: 30px;
+      margin: 16px 0;
+      color: #212121;
+    }
+
+    h2{
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      margin-bottom: 30px;
+      padding-top: 40px;
+      
+    }
+
+    h3{
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    p, li{
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      font-family: Roboto, sans-serif;
+      font-size: 13px;
+      color: rgb(33, 33, 33);
+      line-height: 24px;
+      margin-bottom: 20px;
+    }  
+
+    strong{
+      font-weight: 600;
+    }
+
+    video {
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+      a {
+        color: var(--app-primary-color);
+      }
+
+      code {
+        background: #eaeaea;
+        border-radius: 3px;
+        border: 1px solid #999;
+        padding: 3px 7px;
+      }
+
+      code.good{
+        color: #008000;
+        background-color: #e6f5e6 !important;
+        border-color: #aee0ae !important;
+      }
+
+      code.bad{
+        background: #ffeaea !important;
+        color: #b30000;
+        border-color: #f3d4d4 !important;
+      }
+
+
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      th, td {
+        padding: 8px;
+        line-height: 1.4;
+        vertical-align: top;
+        border-top: 1px solid #ddd;
+      }
+
       .card {
-        margin: 24px;
-        padding: 16px;
+        margin: 24px 0;
+        padding: 25px;
 
         color: #757575;
         border-radius: 5px;
         background-color: #fff;
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      }
+
+      .card h2{
+        margin-top: 0;
+        padding-top: 15px;
       }
 
       .circle {
@@ -38,15 +135,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         font-size: 30px;
         line-height: 64px;
+      
       }
 
-      h1 {
-        margin: 16px 0;
-
-        color: #212121;
-
-        font-size: 22px;
+      body {
+        background-color: #fff;
+        
       }
+
+      
+
     </style>
   </template>
 </dom-module>

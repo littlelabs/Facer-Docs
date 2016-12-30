@@ -20,17 +20,35 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/iron-pages/iron-pages.html">
 <link rel="import" href="../bower_components/iron-selector/iron-selector.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="/bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
 <link rel="import" href="my-icons.html">
 
 <dom-module id="my-app">
   <template>
-    <style>
-      :host {
-        --app-primary-color: #4285f4;
-        --app-secondary-color: black;
+    <style include="shared-styles">
 
+      :host {
+        --app-primary-color: #2bade3;
+        --app-secondary-color: #212121;
         display: block;
       }
+
+      #menu{
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      #main-title{
+        padding-left: 2%;
+        font-size: 18px;
+        font-weight: normal;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      app-drawer {
+/*        border-right: 1px solid #ddd;
+*/      }
 
       app-header {
         color: #fff;
@@ -39,27 +57,50 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       app-header paper-icon-button {
         --paper-icon-button-ink-color: white;
       }
-
+      
+      .container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
       .drawer-list {
-        margin: 0 20px;
+        margin: 0 0px;
+        color: #212121;
       }
 
       .drawer-list a {
         display: block;
 
-        padding: 0 16px;
+        padding: 8px 16px;
 
         text-decoration: none;
-
+        font-size: 13px;
         color: var(--app-secondary-color);
+        font-weight: 400;
+        padding: 10px 24px 10px 46px;
+        
+      }
 
-        line-height: 40px;
+
+      .drawer-list h1{
+        padding: 5px 0 5px 22px;
+        font-size: 13px;
+        font-weight: 700;
       }
 
       .drawer-list a.iron-selected {
-        color: black;
+        border-left: 5px solid #6dbd45;
+        background: #fafafa;
+        padding-left: 41px;
+      }
 
-        font-weight: bold;
+      #menu{
+        padding-left: 5px;
+      }
+
+      #logo{
+        
+        margin-left: 5px;
       }
     </style>
 
@@ -73,34 +114,69 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <app-drawer-layout fullbleed>
       <!-- Drawer content -->
       <app-drawer>
-        <app-toolbar>Menu</app-toolbar>
-        <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-          <a name="view1" href="/view1">View One</a>
-          <a name="view2" href="/view2">View Two</a>
-          <a name="view3" href="/view3">View Three</a>
-        </iron-selector>
+        <app-toolbar id="menu"><img src="/images/editorLogo470x62.png" alt="Facer Creator" id="logo" height="31" /></app-toolbar>
+          <div style="height: 100%; overflow: auto;">
+          <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
+            <h1>Getting Started</h1>
+            <a name="introduction" href="/introduction">Introduction</a>            
+<!--             <a name="first-watchface" href="/first-watchface">Building Your First Watch Face</a> -->
+            <a name="overview" href="/overview">Facer Creator Overview</a>
+            <a name="resources" href="/resources">Designer Resources</a>
+            <h1>Element Types</h1>
+            <a name="essentials" href="/essentials">Essential Elements</a>
+            <a name="backgrounds" href="/backgrounds">Backgrounds</a>          
+            <a name="complications" href="/complications">Complications</a>
+            <a name="custom-elements" href="/custom-elements">Custom Elements</a>
+            <h1>Advanced</h1>
+            <a name="tags" href="/tags">Tags</a>    
+            <a name="expressions" href="/expressions">Expressions</a>    
+            <a name="conditionals" href="/conditionals">Conditionals</a>    
+            <a name="boolean-logic" href="/boolean-logic">Boolean Logic</a> 
+            <h1>Tag &amp; Formula Cookbook</h1>
+            <a name="basic-recipes" href="/basic-recipes">Basic Recipes</a> 
+            <a name="kitchen-sink" href="/kitchen-sink">The Kitchen Sink</a> <br/><br/><br/><br/>           
+
+          </iron-selector>
+          </div>
       </app-drawer>
 
       <!-- Main content -->
       <app-header-layout has-scrolling-region>
 
-        <app-header condenses reveals effects="waterfall">
+        <app-header condenses fixed>
           <app-toolbar>
             <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
-            <div main-title>My App</div>
+            <div main-title id="main-title">Facer Creator Documentation</div>
           </app-toolbar>
         </app-header>
 
+        <div class="container">
         <iron-pages
+            id="pagelist"
             selected="[[page]]"
             attr-for-selected="name"
             fallback-selection="view404"
             role="main">
-          <my-view1 name="view1"></my-view1>
-          <my-view2 name="view2"></my-view2>
-          <my-view3 name="view3"></my-view3>
+
+          <my-introduction name="introduction"></my-introduction>
+          <my-overview name="overview"></my-overview>
+          <my-resources name="resources"></my-resources>
+<!--      <my-first-watchface name="first-watchface"></my-first-watchface> -->          
+          <my-essentials name="essentials"></my-essentials>
+          <my-backgrounds name="backgrounds"></my-backgrounds>          
+          <my-complications name="complications"></my-complications>
+          <my-custom-elements name="custom-elements"></my-custom-elements>
+          <my-tags name="tags"></my-tags>   
+          <my-expressions name="expressions"></my-expressions>   
+          <my-conditionals name="conditionals"></my-conditionals>   
+          <my-boolean-logic name="boolean-logic"></my-boolean-logic>
+          <my-kitchen-sink name="kitchen-sink"></my-kitchen-sink>  
+          <my-basic-recipes name="basic-recipes"></my-basic-recipes>   
           <my-view404 name="view404"></my-view404>
         </iron-pages>
+        </div>
+         <!-- <a href="#" on-click="prevPage">Previous</a>
+         <a href="#" on-click="nextPage">Next</a> -->
       </app-header-layout>
     </app-drawer-layout>
   </template>
@@ -117,12 +193,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }
       },
 
+      ready: function() {
+        this.ironPages = this.$.pagelist;
+      },
+
       observers: [
         '_routePageChanged(routeData.page)'
       ],
 
       _routePageChanged: function(page) {
-        this.page = page || 'view1';
+        this.page = page || 'introduction';
       },
 
       _pageChanged: function(page) {
@@ -133,7 +213,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       _showPage404: function() {
         this.page = 'view404';
+      },
+
+      nextPage: function() {
+        this.$.pagelist.selectNext();
+        console.log(this.$.pagelist.selected);
+      },
+
+      prevPage: function() {
+        this.$.pagelist.selectPrevious();
       }
+
     });
+
   </script>
 </dom-module>

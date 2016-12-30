@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title></title>
+
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/highlight.dark.css">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="/">
+                The title
+                <small class="hidden-xs hidden-sm">
+                    This is the default subtitle!
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container">
+            <div class="row">
+
+                
+                <section id="content" class="col-sm-12">
+                    <h1 id="polymer-app-toolbox---starter-kit">Polymer App Toolbox - Starter Kit</h1>
+<p><a href="https://travis-ci.org/PolymerElements/polymer-starter-kit"><img src="https://travis-ci.org/PolymerElements/polymer-starter-kit.svg?branch=master" alt="Build Status" /></a></p>
+<p>This template is a starting point for building apps using a drawer-based
+layout. The layout is provided by <code>app-layout</code> elements.</p>
+<p>This template, along with the <code>polymer-cli</code> toolchain, also demonstrates use
+of the &quot;PRPL pattern&quot; This pattern allows fast first delivery and interaction with
+the content at the initial route requested by the user, along with fast subsequent
+navigation by pre-caching the remaining components required by the app and
+progressively loading them on-demand as the user navigates through the app.</p>
+<p>The PRPL pattern, in a nutshell:</p>
+<ul>
+<li><strong>Push</strong> components required for the initial route</li>
+<li><strong>Render</strong> initial route ASAP</li>
+<li><strong>Pre-cache</strong> components for remaining routes</li>
+<li><strong>Lazy-load</strong> and progressively upgrade next routes on-demand</li>
+</ul>
+<h3 id="migrating-from-polymer-starter-kit-v1">Migrating from Polymer Starter Kit v1?</h3>
+<p><a href="https://www.polymer-project.org/1.0/blog/2016-08-18-polymer-starter-kit-or-polymer-cli.html">Check out our blog post that covers what's changed in PSK2 and how to migrate!</a></p>
+<h3 id="setup">Setup</h3>
+<h5 id="prerequisites">Prerequisites</h5>
+<p>Install <a href="https://github.com/Polymer/polymer-cli">polymer-cli</a>:</p>
+<pre><code>npm install -g polymer-cli</code></pre>
+<h5 id="initialize-project-from-template">Initialize project from template</h5>
+<pre><code>mkdir my-app
+cd my-app
+polymer init starter-kit</code></pre>
+<h3 id="start-the-development-server">Start the development server</h3>
+<p>This command serves the app at <code>http://localhost:8080</code> and provides basic URL
+routing for the app:</p>
+<pre><code>polymer serve --open</code></pre>
+<h3 id="build">Build</h3>
+<p>This command performs HTML, CSS, and JS minification on the application
+dependencies, and generates a service-worker.js file with code to pre-cache the
+dependencies based on the entrypoint and fragments specified in <code>polymer.json</code>.
+The minified files are output to the <code>build/unbundled</code> folder, and are suitable
+for serving from a HTTP/2+Push compatible server.</p>
+<p>In addition the command also creates a fallback <code>build/bundled</code> folder,
+generated using fragment bundling, suitable for serving from non
+H2/push-compatible servers or to clients that do not support H2/Push.</p>
+<pre><code>polymer build</code></pre>
+<h3 id="preview-the-build">Preview the build</h3>
+<p>This command serves the minified version of the app at <code>http://localhost:8080</code>
+in an unbundled state, as it would be served by a push-compatible server:</p>
+<pre><code>polymer serve build/unbundled</code></pre>
+<p>This command serves the minified version of the app at <code>http://localhost:8080</code>
+generated using fragment bundling:</p>
+<pre><code>polymer serve build/bundled</code></pre>
+<h3 id="run-tests">Run tests</h3>
+<p>This command will run
+<a href="https://github.com/Polymer/web-component-tester">Web Component Tester</a> against the
+browsers currently installed on your machine.</p>
+<pre><code>polymer test</code></pre>
+<h3 id="adding-a-new-view">Adding a new view</h3>
+<p>You can extend the app by adding more views that will be demand-loaded
+e.g. based on the route, or to progressively render non-critical sections
+of the application.  Each new demand-loaded fragment should be added to the
+list of <code>fragments</code> in the included <code>polymer.json</code> file.  This will ensure
+those components and their dependencies are added to the list of pre-cached
+components (and will have bundles created in the fallback <code>bundled</code> build).</p>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+        <!-- Livereload -->
+        <script>
+            document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+                    ':35729/livereload.js?snipver=1"></' + 'script>')
+        </script>
+        <!-- End Livereload -->
+    </body>
+</html>

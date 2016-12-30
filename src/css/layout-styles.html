@@ -1,0 +1,35 @@
+<dom-module id="layout-styles">
+<template>
+<style>
+.col-list {
+  margin: 40px 0;
+  font-size: 0; }
+  .col-list .module,
+  .col-list .figure {
+    vertical-align: top;
+    font-size: 13px; }
+  .col-list .col-2 > div,
+  .col-list .col-3 > div {
+    padding-bottom: 20px; }
+  .col-list .col-2,
+  .col-list .col-3 {
+    padding-bottom: 40px; }
+  .col-list .col-2 > div,
+  .col-list .col-3 > div {
+    display: inline-block; }
+  .col-list .col-2 > div:nth-child(1) {
+    width: 360px;
+    margin-right: 40px; }
+  .col-list .col-2 > div:nth-child(2) {
+    display: inline-block;
+    width: 760px;
+    vertical-align: top; }
+  .col-list .col-3 > div {
+    width: 360px;
+    margin-right: 40px; }
+  .col-list .col-3 > div:nth-child(3) {
+    margin-right: 0; }
+
+</style>
+</template>
+</dom-module>
