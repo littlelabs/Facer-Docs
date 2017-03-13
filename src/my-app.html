@@ -102,6 +102,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
         margin-left: 5px;
       }
+
+      small.version{
+      font-size: 10px;
+      text-align: center;
+      display:block;
+    }
     </style>
 
     <app-location route="{{route}}"></app-location>
@@ -114,7 +120,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <app-drawer-layout fullbleed>
       <!-- Drawer content -->
       <app-drawer>
-        <app-toolbar id="menu"><img src="/images/editorLogo470x62.png" alt="Facer Creator" id="logo" height="31" /></app-toolbar>
+        <app-toolbar id="menu"><img src="/images/editorLogo470x62.png" alt="Facer Creator" id="logo" height="31" />
+        </app-toolbar>
           <div style="height: 100%; overflow: auto;">
           <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
             <h1>Getting Started</h1>
@@ -134,9 +141,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <a name="boolean-logic" href="/boolean-logic">Boolean Logic</a> 
             <h1>Tag &amp; Formula Cookbook</h1>
             <a name="basic-recipes" href="/basic-recipes">Basic Recipes</a> 
-            <a name="kitchen-sink" href="/kitchen-sink">The Kitchen Sink</a> <br/><br/><br/><br/>           
+            <a name="kitchen-sink" href="/kitchen-sink">The Kitchen Sink</a> <br/>
+            <hr>
+            <small class="version">Facer Creator Documentation v1.0.0</small><br/><br/><br/>           
 
           </iron-selector>
+
           </div>
       </app-drawer>
 
