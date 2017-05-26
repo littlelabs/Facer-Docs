@@ -1,0 +1,732 @@
+---
+title: Tags
+category: Advanced
+order: 0
+---
+      <p>Tags are dynamic values you can add to the dynamic attributes of a watch face layer. Facer tags are always surrounded by hashtags: <code>#Ds#</code>. Dynamic means the value can be different under different circumstances. For example, the <code>#Ds#</code> is the current second value, so every second this value changes.</p>
+
+      <!-- <p>Note: The <strong>data type</strong> is important to note when using tags. If you want to use a tag in a math formula, all tags in the formula will need to be <strong>numerical</strong>. Using tags with the data type of <strong>string</strong> will produce unexpected results!</p> -->
+
+      <div class="card">
+      <table class="table">
+      <thead>
+        <tr>
+          <th>TAG</th>
+          <th>DEFINITION</th>
+          <th>EXAMPLE OUTPUT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- ngRepeat: tag in tags --><!-- ngIf: !tag.hidden --><tr>
+          <th>#DWE#</th>
+          <td>Time elapsed since last watch face view</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>#Dy#</th>
+          <td>Year</td>
+          <td>2016</td>
+        </tr>
+        <tr>
+          <th>#Dyy#</th>
+          <td>Short Year</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <th>#Dyyyy#</th>
+          <td>Year</td>
+          <td>2016</td>
+        </tr>
+        <tr>
+          <th>#DM#</th>
+          <td>Month in Year (Numeric)</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <th>#DMM#</th>
+          <td>Month in Year (Numeric)</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <th>#DMMM#</th>
+          <td>Month in Year (Short String)</td>
+          <td>Nov</td>
+        </tr>
+        <tr>
+          <th>#DMMMM#</th>
+          <td>Month in Year (String)</td>
+          <td>November</td>
+        </tr>
+        <tr>
+          <th>#DW#</th>
+          <td>Week in Month</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th>#Dw#</th>
+          <td>Week in Year</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <th>#DD#</th>
+          <td>Day in Year </td>
+          <td>313</td>
+        </tr>
+        <tr>
+          <th>#Dd#</th>
+          <td>Day in Month </td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <th>#DdL#</th>
+          <td>Day in Month with leading 0</td>
+          <td>08</td>
+        </tr>
+        <tr>
+          <th>#DIM#</th>
+          <td>Maximum days in the current month</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <th>#DE#</th>
+          <td>Day of Week (Short String)</td>
+          <td>Tue</td>
+        </tr>
+        <tr>
+          <th>#DES#</th>
+          <td>First letter of the day of Week</td>
+          <td>T</td>
+        </tr>
+        <tr>
+          <th>#DOW#</th>
+          <td>Day of week int (0-6)</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th>#DOWB#</th>
+          <td>Day of week int (1-7)</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th>#DEEEE#</th>
+          <td>Day of Week</td>
+          <td>Tuesday</td>
+        </tr>
+        <tr>
+          <th>#DF#</th>
+          <td>Day of Week in Month</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th>#Da#</th>
+          <td>AM/PM</td>
+          <td>PM</td>
+        </tr>
+        <tr>
+          <th>#Dh#</th>
+          <td>Hour in Day (1-12)</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <th>#Dk#</th>
+          <td>Hour in Day (1-24)</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <th>#DH#</th>
+          <td>Hour in Day (0-23)</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <th>#DK#</th>
+          <td>Hour in Day (0-11)</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>#Db#</th>
+          <td>Hours in day using user’s preferred format (12/24)​</td>
+          <td>12</td>
+        </tr>
+        <!-- end ngRepeat: tag in tags --><!-- ngIf: !tag.hidden --><tr>
+          <th>#DHZ#</th>
+          <td>Hour in Day (leading zero) (00-23)</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <th>#DkZ#</th>
+          <td>Hour in Day (leading zero) (01-24)</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <th>#DkZA#</th>
+          <td>First Digit of the Hour in Day (0-2)</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <th>#DkZB#</th>
+          <td>Second Digit of the Hour in Day (0-9)</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th>#DKZ#</th>
+          <td>Hour in Day (12 hour, leading zero) (00-11)</td>
+          <td>00</td>
+        </tr>
+        <tr>
+          <th>#DhZ#</th>
+          <td>Hour in Day (12 hour, leading zero) (01-12)</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <th>#DhZA#</th>
+          <td>First Digit of the Hour in Day AM/PM (0-1)</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <th>#DhZB#</th>
+          <td>Second Digit of the Hour in Day AM/PM (0-9)</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th>#DhoT#</th>
+          <td>Value for Hour Rotation (12 hour)</td>
+          <td>360</td>
+        </tr>
+        <tr>
+          <th>#DhoTb#</th>
+          <td>Value for Hour Rotation (24 hour)</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <th>#DWFK#</th>
+          <td>Value for Hour Rotation (12 hour)</td>
+          <td>360</td>
+        </tr>
+        <tr>
+          <th>#DWFH#</th>
+          <td>Value for Hour Rotation (24 hour)</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <th>#DWFKS#</th>
+          <td>Smooth Value for Hour Rotation (12 hour)</td>
+          <td>389</td>
+        </tr>
+        <tr>
+          <th>#DWFHS#</th>
+          <td>Smooth Value for Hour Rotation (24 hour)</td>
+          <td>194.5</td>
+        </tr>
+        <tr>
+          <th>#DhT#</th>
+          <td>String value for hour (12 hour)</td>
+          <td>twelve</td>
+        </tr>
+        <tr>
+          <th>#DkT#</th>
+          <td>String value for hour (24 hour)</td>
+          <td>twelve</td>
+        </tr>
+        <tr>
+          <th>#Dm#</th>
+          <td>Minute in Hour</td>
+          <td>58</td>
+        </tr>
+        <tr>
+          <th>#DmZ#</th>
+          <td>Minute in Hour (leading zero)</td>
+          <td>58</td>
+        </tr>
+        <!-- end ngRepeat: tag in tags --><!-- ngIf: !tag.hidden --><tr>
+          <th>#DWFM#</th>
+          <td>Value for minute hand rotation</td>
+          <td>348</td>
+        </tr>
+        <tr>
+          <th>#DWFMS#</th>
+          <td>Smooth Value for minute hand rotation</td>
+          <td>351.8</td>
+        </tr>
+        <tr>
+          <th>#DmT#</th>
+          <td>String value for minutes</td>
+          <td>fifty eight</td>
+        </tr>
+        <tr>
+          <th>#DmMT#</th>
+          <td>String value for minutes (tens place)</td>
+          <td>fifty</td>
+        </tr>
+        <tr>
+          <th>#DmST#</th>
+          <td>String value for minutes (ones place)</td>
+          <td>eight</td>
+        </tr>
+        <tr>
+          <th>#Ds#</th>
+          <td>Second in minute</td>
+          <td>38</td>
+        </tr>
+        <tr>
+          <th>#DsZ#</th>
+          <td>Second in minute (leading zero)</td>
+          <td>38</td>
+        </tr>
+        <tr>
+          <th>#Dsm#</th>
+          <td>Second in minute plus milliseconds</td>
+          <td>38.805</td>
+        </tr>
+        <tr>
+          <th>#DseT#</th>
+          <td>Value for second hand rotation</td>
+          <td>228</td>
+        </tr>
+        <tr>
+          <th>#DWFS#</th>
+          <td>Rotation value for second hand</td>
+          <td>228</td>
+        </tr>
+        <tr>
+          <th>#DWFSS#</th>
+          <td>Smooth Rotation value for second hand</td>
+          <td>232.829999946838</td>
+        </tr>
+        <tr>
+          <th>#DSMOOTH#</th>
+          <td>Smooth Rotation (boolean)</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <th>#Dz#</th>
+          <td>Timezone Abbreviation</td>
+          <td>PST</td>
+        </tr>
+        <tr>
+          <th>#Dzzzz#</th>
+          <td>Timezone Name</td>
+          <td>PST</td>
+        </tr>
+        <tr>
+          <th>#DWR#</th>
+          <td>Day of Week Rotational Code</td>
+          <td>154.28571428571428</td>
+        </tr>
+        <tr>
+          <th>#DMR#</th>
+          <td>Day of Month Rotational Code</td>
+          <td>92.90322580645162</td>
+        </tr>
+        <tr>
+          <th>#DYR#</th>
+          <td>Day of Year Rotational Code</td>
+          <td>313</td>
+        </tr>
+        <tr>
+          <th>#DMYR#</th>
+          <td>Month in Year Rotational Code</td>
+          <td>330</td>
+        </tr>
+        <tr>
+          <th>#DUh#</th>
+          <td>Hour in Day (UTC) (1-12)</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <th>#DUk#</th>
+          <td>Hour in Day (UTC) (1-24)</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <th>#DUH#</th>
+          <td>Hour in Day (UTC) (0-23)</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <th>#DUK#</th>
+          <td>Hour in Day (UTC) (0-11)</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <th>#DUb#</th>
+          <td>Hours in day using user’s preferred format (UTC) (12/24)​</td>
+          <td>undefined</td>
+        </tr>
+        <tr>
+          <th>#DUHZ#</th>
+          <td>Hour in Day (leading zero) (UTC) (00-23)</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <th>#DUkZ#</th>
+          <td>Hour in Day (leading zero) (UTC) (01-24)</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <th>#DUKZ#</th>
+          <td>Hour in Day (12 hour, leading zero) (UTC) (00-11)</td>
+          <td>08</td>
+        </tr>
+        <tr>
+          <th>#DUhZ#</th>
+          <td>Hour in Day (12 hour, leading zero) (UTC) (01-12)</td>
+          <td>08</td>
+        </tr>
+        <tr>
+          <th>#DUm#</th>
+          <td>Minute in Hour (UTC)</td>
+          <td>58</td>
+        </tr>
+        <tr>
+          <th>#DUmZ#</th>
+          <td>Minute in Hour (leading zero) (UTC)</td>
+          <td>58</td>
+        </tr>
+        <tr>
+          <th>#DUs#</th>
+          <td>Second in minute (UTC)</td>
+          <td>38</td>
+        </tr>
+        <tr>
+          <th>#DUsZ#</th>
+          <td>Second in minute (leading zero) (UTC)</td>
+          <td>38</td>
+        </tr>
+        <tr>
+          <th>#BLP#</th>
+          <td>Watch Battery Level Percentage</td>
+          <td>46%</td>
+        </tr>
+        <tr>
+          <th>#BLN#</th>
+          <td>Watch Battery Level Integer</td>
+          <td>46</td>
+        </tr>
+        <tr>
+          <th>#BTC#</th>
+          <td>Watch Battery Temperature (°C)</td>
+          <td>31°C</td>
+        </tr>
+        <tr>
+          <th>#BTI#</th>
+          <td>Watch Battery Temperature (°F)</td>
+          <td>87°F</td>
+        </tr>
+        <tr>
+          <th>#BTCN#</th>
+          <td>Watch Battery Temperature (Celcius)</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <th>#BTIN#</th>
+          <td>Watch Battery Temperature (Fahrenheit)</td>
+          <td>87</td>
+        </tr>
+        <tr>
+          <th>#BS#</th>
+          <td>Watch Battery Charging Status</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>#ZLP#</th>
+          <td>Low Power Mode</td>
+          <td>null</td>
+        </tr>
+        <tr>
+          <th>#ZSC#</th>
+          <td>Step Count</td>
+          <td>1556</td>
+        </tr>
+        <tr>
+          <th>#ZDEVICE#</th>
+          <td>Device Name</td>
+          <td>Smartwatch</td>
+        </tr>
+        <tr>
+          <th>#ZMANU#</th>
+          <td>Device Manufacturer</td>
+          <td>Facer</td>
+        </tr>
+        <tr>
+          <th>#ZISROUND#</th>
+          <td>Device Screen Shape (true, if circular)</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <th>#PBP#</th>
+          <td>Phone Level Percentage</td>
+          <td>79%</td>
+        </tr>
+        <tr>
+          <th>#PBN#</th>
+          <td>Phone Level Integer</td>
+          <td>79</td>
+        </tr>
+        <tr>
+          <th>#PWL#</th>
+          <td>Phone WiFi Level</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th>#WM#</th>
+          <td>Weather Units (F/M)</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <th>#WLC#</th>
+          <td>Weather Location</td>
+          <td>Los Angeles</td>
+        </tr>
+        <tr>
+          <th>#WTH#</th>
+          <td>Today's High</td>
+          <td>86</td>
+        </tr>
+        <tr>
+          <th>#WTL#</th>
+          <td>Todays' Low</td>
+          <td>63</td>
+        </tr>
+        <tr>
+          <th>#WCT#</th>
+          <td>Current Temp</td>
+          <td>84</td>
+        </tr>
+        <tr>
+          <th>#WCCI#</th>
+          <td>Current Condition Icon</td>
+          <td>03</td>
+        </tr>
+        <tr>
+          <th>#WCCT#</th>
+          <td>Current Condition Text</td>
+          <td>Fair</td>
+        </tr>
+        <tr>
+          <th>#WCHN#</th>
+          <td>Current Humidity Number</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <th>#WCHP#</th>
+          <td>Current Humidity Percentage</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <th>#DISDAYTIME#</th>
+          <td>Returns true if time is after sunrise and before sunset</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <th>#WRh#</th>
+          <td>Sunrise hour (1-12)</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <th>#WRhZ#</th>
+          <td>Sunrise hour (leading zero) (01-12)</td>
+          <td>05</td>
+        </tr>
+        <tr>
+          <th>#WRH#</th>
+          <td>Sunrise hour (0-23)</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <th>#WRHZ#</th>
+          <td>Sunrise hour (leading zero) (00-23)</td>
+          <td>05</td>
+        </tr>
+        <tr>
+          <th>#WRm#</th>
+          <td>Sunrise minute (0-59)</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <th>#WRmZ#</th>
+          <td>Sunrise minute (leading zero) (00-59)</td>
+          <td>06</td>
+        </tr>
+        <tr>
+          <th>#WSh#</th>
+          <td>Sunset hour (1-12)</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <th>#WShZ#</th>
+          <td>Sunset hour (leading zero) (01-12)</td>
+          <td>08</td>
+        </tr>
+        <tr>
+          <th>#WSH#</th>
+          <td>Sunset hour (0-23)</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <th>#WSHZ#</th>
+          <td>Sunset hour (leading zero) (00-23)</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <th>#WSm#</th>
+          <td>Sunset minute (0-59)</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <th>#WSmZ#</th>
+          <td>Sunset minute (leading zero) (00-59)</td>
+          <td>06</td>
+        </tr>
+        <tr>
+          <th>#WSUNRISE#</th>
+          <td>Time of sunrise</td>
+          <td>5:50 am</td>
+        </tr>
+        <tr>
+          <th>#WSUNSET#</th>
+          <td>Time of sunset</td>
+          <td>8:06 pm</td>
+        </tr>
+        <tr>
+          <th>#WSUNRISE24#</th>
+          <td>Time of sunrise (24)</td>
+          <td>5:50</td>
+        </tr>
+        <tr>
+          <th>#WSUNSET24#</th>
+          <td>Time of sunset (24)</td>
+          <td>20:06</td>
+        </tr>
+        <tr>
+          <th>#WSUNRISEH#</th>
+          <td>Hour of sunrise</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <th>#WSUNRISEM#</th>
+          <td>Minute of sunrise</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <th>#WSUNSETH#</th>
+          <td>Hour of sunset</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <th>#WSUNSETM#</th>
+          <td>Minute of sunset</td>
+          <td>06</td>
+        </tr>
+        <tr>
+          <th>#WSUNRISEH24#</th>
+          <td>Hour of sunrise (24)</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <th>#WSUNSETH24#</th>
+          <td>Hour of sunset (24)</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <th>#WFAH#</th>
+          <td>Forecast Day 1 High</td>
+          <td>86</td>
+        </tr>
+        <tr>
+          <th>#WFAL#</th>
+          <td>Forecast Day 1 Low</td>
+          <td>63</td>
+        </tr>
+        <tr>
+          <th>#WFACT#</th>
+          <td>Forecast Day 1 Condition Text</td>
+          <td>Clear</td>
+        </tr>
+        <tr>
+          <th>#WFACI#</th>
+          <td>Forecast Day 1 Condition Icon</td>
+          <td>01</td>
+        </tr>
+        <tr>
+          <th>#WFBH#</th>
+          <td>Forecast Day 2 High</td>
+          <td>85</td>
+        </tr>
+        <tr>
+          <th>#WFBL#</th>
+          <td>Forecast Day 2 Low</td>
+          <td>63</td>
+        </tr>
+        <tr>
+          <th>#WFBCT#</th>
+          <td>Forecast Day 2 Condition Text</td>
+          <td>Sunny</td>
+        </tr>
+        <tr>
+          <th>#WFBCI#</th>
+          <td>Forecast Day 2 Condition Icon</td>
+          <td>01</td>
+        </tr>
+        <tr>
+          <th>#WFCH#</th>
+          <td>Forecast Day 3 High</td>
+          <td>85</td>
+        </tr>
+        <tr>
+          <th>#WFCL#</th>
+          <td>Forecast Day 3 Low</td>
+          <td>63</td>
+        </tr>
+        <tr>
+          <th>#WFCCT#</th>
+          <td>Forecast Day 3 Condition Text</td>
+          <td>Sunny</td>
+        </tr>
+        <tr>
+          <th>#WFCCI#</th>
+          <td>Forecast Day 3 Condition Icon</td>
+          <td>01</td>
+        </tr>
+        <tr>
+          <th>#WFDH#</th>
+          <td>Forecast Day 4 High</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <th>#WFDL#</th>
+          <td>Forecast Day 4 Low</td>
+          <td>64</td>
+        </tr>
+        <tr>
+          <th>#WFDCT#</th>
+          <td>Forecast Day 4 Condition Text</td>
+          <td>Sunny</td>
+        </tr>
+        <tr>
+          <th>#WFDCI#</th>
+          <td>Forecast Day 4 Condition Icon</td>
+          <td>01</td>
+        </tr>
+        <tr>
+          <th>#WFEH#</th>
+          <td>Forecast Day 5 High</td>
+          <td>86</td>
+        </tr>
+        <tr>
+          <th>#WFEL#</th>
+          <td>Forecast Day 5 Low</td>
+          <td>68</td>
+        </tr>
+        <tr>
+          <th>#WFECT#</th>
+          <td>Forecast Day 5 Condition Text</td>
+          <td>Mostly Sunny</td>
+        </tr>
+        <tr>
+          <th>#WFECI#</th>
+          <td>Forecast Day 5 Condition Icon</td>
+          <td>01</td>
+        </tr><!-- end ngIf: !tag.hidden --><!-- end ngRepeat: tag in tags -->
+      </tbody>
+    </table>
+    </div>

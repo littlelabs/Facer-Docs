@@ -1,0 +1,121 @@
+---
+title: The Kitchen Sink
+category: Tag & Formula Cookbook
+order: 1
+---
+
+    <p>In order to help advanced users with a series of samples of possibilities, we've created the 'Kitchen Sink' watch face. This watch face isn't very useful for telling time, but you can use Inspection Mode to see how we achieve certain animations and effects here at Facer HQ. </p>
+    <p>You can open the watch in inspector mode to see how it all works: <a href="https://www.facer.io/watchface/1WkGlWDQzf/inspect">https://www.facer.io/watchface/1WkGlWDQzf/inspect</a> Feel free to make changes, nothing will get saved so you're free to play!
+    </p>
+    <p>We'll go through a couple of specific expressions used in the watch face:</p>
+
+    <!-- <ul>
+      <li><a href="#fade-in">Fade In / Fade Out</a></li>
+      <li><a href="#pendulum">Pendulum Motion</a></li>
+      <li><a href="#breathing">"Breathing" Motion</a></li>
+      <li><a href="#orbit">Basic Orbit</a></li>
+    </ul> -->
+    
+    <div class="card">
+      <a id="fade-in"></a>
+      <h2>Fade In / Fade Out</h2>
+      <p>
+        These recipes cover 3 behaviors: Fade in when the watch wakes up, Fade out when the watch wakes up, or Fade In/Out on a loop.
+        <video autoplay="autoplay" loop="loop" width="100%">
+            <source src="/images/FadeSample.mp4" type="video/mp4">
+        </video>
+
+        <em>Note: To see the fade in &amp; fade out elements in our sample, you'll need to toggle between Active/Dim mode while the time machine is running at normal speed.</em>
+      </p>
+      
+      <hr>
+
+      <h3>Recipe for Fade In When the Watch Wakes:</h3>
+      <p>
+        <strong>Property: Transparency</strong><br>
+        <code>((interpAccel(#DWE#, 0, 2, 2)*100))</code>
+      </p>
+
+      <hr>
+
+      <h3>Recipe for Fade Out When the Watch Wakes:</h3>
+      <p>
+        <strong>Property: Transparency</strong><br>
+        <code>(100-(interpAccel(#DWE#, 0, 2, 2)*100))</code>
+      </p>
+      
+      <hr>
+
+      <h3>Recipe for Looping Fade In &amp; Fade Out:</h3>
+      <p>
+       
+        <strong>Property: Transparency</strong><br>
+        <code>((sin(#DWE#*5))*50+50)</code>
+      </p>
+    </div>
+
+    <div class="card">
+    <a id="pendulum"></a>
+    <h2>Pendulum Motion</h2>
+    <p>Allow an element to move as if swinging from a string
+      <video autoplay="autoplay" loop="loop" width="100%">
+        <source src="/images/Pendulum.mp4" type="video/mp4">
+      </video>
+      </p>
+
+      <hr>
+
+    <h3>Recipe for Pendulum Motion:</h3>
+    <p>
+      <strong>Property: Rotation</strong>
+      <code>(sin(#DWE#*2)*50)</code>
+    </p>
+    </div>
+
+    <div class="card">
+    <a id="breathing"></a>
+    <h2>"Breathing" Motion</h2>
+    <p>Have an element cycle properties easing in &amp; out, to create a 'breathing' effect
+      <video autoplay="autoplay" loop="loop" width="100%">
+        <source src="/images/Breathe.mp4" type="video/mp4">
+      </video>
+      </p>
+
+      <hr>
+
+    <h3>Recipe for Breathing Opacity:</h3>
+    <p>
+      <strong>Property: Transparency</strong>
+      <code>((sin(#DWE#*2)*60)+50)</code>
+    </p>
+
+    <hr>
+
+    <h3>Recipe for Breathing Size:</h3>
+    <p>
+      <strong>Property: Radius</strong>
+      <code>((sin(#DWE#*2)*40)+50)</code>
+    </p>
+    </div>
+
+    <div class="card">
+    <a id="orbit"></a>
+    <h2>Basic Orbit</h2>
+    <p>Orbit an element in a circular motion
+      <video autoplay="autoplay" loop="loop" width="100%">
+        <source src="/images/Orbit.mp4" type="video/mp4">
+      </video>
+      </p>
+
+      <hr>
+
+    <h3>Recipe for Basic Orbit:</h3>
+    <p>
+      <strong>Property: X Position</strong>
+      <code>(160 + sin(#DWFSS#/4)*50)</code>
+    </p>
+    <p>
+      <strong>Property: Y Position</strong>
+      <code>(160 + cos(#DWFSS#/4)*50)</code>
+    </p>
+    </div>
