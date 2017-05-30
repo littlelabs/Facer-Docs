@@ -122,12 +122,12 @@ header {
 		background-color: transparent;
 		background-repeat: no-repeat;
 		background-size: 100%;
-		width: $emblem-size;
-		height: $emblem-size;
+		width: 40px;
+		height: 40px;
 		border: 0;
 		position: absolute;
-		top: $emblem-vertical-padding;
-		right: $emblem-horizontal-padding;
+		top: 10px;
+		right: 10px;
 		border-radius: 2px;
 
 		&:focus {
@@ -161,11 +161,11 @@ header {
 	background-color: $content-background-color;
 	color: $content-color;
 
-	h3::before {
+	/*h3::before {
 		content: "";
 		@extend hr;
 		margin: 60px 0;
-	}
+	}*/
 }
 
 .content,
