@@ -11,11 +11,13 @@ A note about boolean operators in conditionals, it's important to avoid putting 
 <p>
 These will be ok:
 </p>
+<p>
 <code class="good">$ 1 == 1 || 1 == 1 ? 1 : 0 $ </code><br/><br/>
 
 <code class="good">$ (1+1) == (1) || (1) == (1) ? 1 : 0 $</code>
+</p>
 <p>These will have unexpected results:</p>
 
-<code class="bad">$ (1 == 1) || (1 == 1) ? 1 : 0 $ </code><br/><br/>
+<p><code class="bad">$ (1 == 1) || (1 == 1) ? 1 : 0 $ </code><br/><br/>
 
-<code class="bad">$ (1 == 1 || 1 == 1) ? 1 : 0 $</code>
+<code class="bad">$ (1 == 1 || 1 == 1) ? 1 : 0 $</code></p>

@@ -62,6 +62,24 @@ img.center{
 	font-size: 12px;
 }
 
+code.good {
+    color: #008000;
+    background-color: #e6f5e6 !important;
+    border-color: #aee0ae !important;
+    border-width: 1px;
+    border-style: solid;
+    padding: 3px;
+}
+
+code.bad {
+    background: #ffeaea !important;
+    color: #b30000;
+    border-color: #f3d4d4 !important;
+    border-width: 1px;
+    border-style: solid;
+    padding: 3px;
+}
+
 @import "mixins";
 @import "normalize";
 @import "pygments";
