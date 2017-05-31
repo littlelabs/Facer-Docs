@@ -171,7 +171,7 @@ header {
 .content,
 .page-header {
 	max-width: $content-max-width;
-	padding: 0 ($space + 5) $space;
+	padding: 0 (4*$space) $space;
 	margin: $space auto 0 auto;
 }
 
