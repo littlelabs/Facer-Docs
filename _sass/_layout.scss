@@ -171,8 +171,11 @@ header {
 .content,
 .page-header {
 	max-width: $content-max-width;
-	padding: 0 (4*$space) $space;
+	padding: 0 $space $space;
 	margin: $space auto 0 auto;
+	@media (min-width: $mobile-break) {
+		padding: 0 (4*$space) $space;
+	}
 }
 
 .page-header {
