@@ -1,7 +1,6 @@
 # Facer Creator Documentation Source 
 
 To preview your changes locally, you can run the following commands:
-## Initial Setup:
 ---
 #### Mac Users: We recommend a couple of optional extra steps if you are on a Mac.
 1. First you'll need xcode development tools:
@@ -13,7 +12,7 @@ To preview your changes locally, you can run the following commands:
 3. Now install Ruby
 ```brew install ruby```
 ---
-Then you should be able to install Jekyll:
+## Install Jekyll:
 ```$ sudo gem install jekyll bundler```
 ## To Build the Site:
 ```$ jekyll build --watch```
