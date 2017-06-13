@@ -18,8 +18,8 @@ order: 0
       <tbody>
         <!-- ngRepeat: tag in tags --><!-- ngIf: !tag.hidden --><tr>
           <th>#DWE#</th>
-          <td>Time elapsed since last watch face view</td>
-          <td>0</td>
+          <td>Time elapsed since last watch face view (in seconds with 0.01 parts)</td>
+          <td>5.12</td>
         </tr>
         <tr>
           <th>#Dy#</th>
@@ -33,7 +33,7 @@ order: 0
         </tr>
         <tr>
           <th>#Dyyyy#</th>
-          <td>Year</td>
+          <td>Long Year</td>
           <td>2016</td>
         </tr>
         <tr>
@@ -43,7 +43,7 @@ order: 0
         </tr>
         <tr>
           <th>#DMM#</th>
-          <td>Month in Year (Numeric)</td>
+          <td>Month in Year (Numeric) with leading 0</td>
           <td>11</td>
         </tr>
         <tr>
@@ -98,12 +98,12 @@ order: 0
         </tr>
         <tr>
           <th>#DOW#</th>
-          <td>Day of week int (0-6)</td>
+          <td>Day of week int (0-6 where 0 is Monday)</td>
           <td>2</td>
         </tr>
         <tr>
           <th>#DOWB#</th>
-          <td>Day of week int (1-7)</td>
+          <td>Day of week int (1-7 where 1 is Monday)</td>
           <td>3</td>
         </tr>
         <tr>
@@ -178,42 +178,42 @@ order: 0
         </tr>
         <tr>
           <th>#DhZA#</th>
-          <td>First Digit of the Hour in Day AM/PM (0-1)</td>
+          <td>First Digit (12 hour) of the in Day (0-1)</td>
           <td>1</td>
         </tr>
         <tr>
           <th>#DhZB#</th>
-          <td>Second Digit of the Hour in Day AM/PM (0-9)</td>
+          <td>Second Digit (12 hour) of the in Day (0-9)</td>
           <td>2</td>
         </tr>
         <tr>
           <th>#DhoT#</th>
-          <td>Value for Hour Rotation (12 hour)</td>
+          <td>Value for Hour Rotation (12 hour) (30-360 with intervals of 30)</td>
           <td>360</td>
         </tr>
         <tr>
           <th>#DhoTb#</th>
-          <td>Value for Hour Rotation (24 hour)</td>
+          <td>Value for Hour Rotation (24 hour) (0-345 with intervals of 15)</td>
           <td>180</td>
         </tr>
         <tr>
           <th>#DWFK#</th>
-          <td>Value for Hour Rotation (12 hour)</td>
+          <td>Value for Hour Rotation (12 hour) (30-360 with intervals of 30)</td>
           <td>360</td>
         </tr>
         <tr>
           <th>#DWFH#</th>
-          <td>Value for Hour Rotation (24 hour)</td>
+          <td>Value for Hour Rotation (24 hour) (0-345 with intervals of 15)</td>
           <td>180</td>
         </tr>
         <tr>
           <th>#DWFKS#</th>
-          <td>Smooth Value for Hour Rotation (12 hour)</td>
+          <td>Smooth Value for Hour Rotation (12 hour) (30-390)</td>
           <td>389</td>
         </tr>
         <tr>
           <th>#DWFHS#</th>
-          <td>Smooth Value for Hour Rotation (24 hour)</td>
+          <td>Smooth Value for Hour Rotation (24 hour) (0-359.75 with 0.25 parts)</td>
           <td>194.5</td>
         </tr>
         <tr>
@@ -238,12 +238,12 @@ order: 0
         </tr>
         <!-- end ngRepeat: tag in tags --><!-- ngIf: !tag.hidden --><tr>
           <th>#DWFM#</th>
-          <td>Value for minute hand rotation</td>
+          <td>Value for minute hand rotation (0-354 with intervals of 6)</td>
           <td>348</td>
         </tr>
         <tr>
           <th>#DWFMS#</th>
-          <td>Smooth Value for minute hand rotation</td>
+          <td>Smooth Value for minute hand rotation (0-359.9 with 0.1 parts)</td>
           <td>351.8</td>
         </tr>
         <tr>
@@ -278,17 +278,17 @@ order: 0
         </tr>
         <tr>
           <th>#DseT#</th>
-          <td>Value for second hand rotation</td>
+          <td>Value for second hand rotation (0-354 with intervals of 6)</td>
           <td>228</td>
         </tr>
         <tr>
           <th>#DWFS#</th>
-          <td>Rotation value for second hand</td>
+          <td>Rotation value for second hand (0-354 with intervals of 6)</td>
           <td>228</td>
         </tr>
         <tr>
           <th>#DWFSS#</th>
-          <td>Smooth Rotation value for second hand</td>
+          <td>Smooth Rotation value for second hand (0-359.99399991780274)</td>
           <td>232.829999946838</td>
         </tr>
         <tr>
@@ -303,27 +303,27 @@ order: 0
         </tr>
         <tr>
           <th>#Dzzzz#</th>
-          <td>Timezone Name</td>
+          <td>Timezone Name (Long - if available)</td>
           <td>PST</td>
         </tr>
         <tr>
           <th>#DWR#</th>
-          <td>Day of Week Rotational Code</td>
+          <td>Day of Week Rotational Code (51.42857142857142(for sunday)-360(for saturday) with intervals of 51.42857142857142)</td>
           <td>154.28571428571428</td>
         </tr>
         <tr>
           <th>#DMR#</th>
-          <td>Day of Month Rotational Code</td>
+          <td>Day of Month Rotational Code (11.612903225806452(for 1st)-360(for 31th) with intervals of 11.612903225806452)</td>
           <td>92.90322580645162</td>
         </tr>
         <tr>
           <th>#DYR#</th>
-          <td>Day of Year Rotational Code</td>
+          <td>Day of Year Rotational Code (1-365(non-leap year),or 1-366(leap year))</td>
           <td>313</td>
         </tr>
         <tr>
           <th>#DMYR#</th>
-          <td>Month in Year Rotational Code</td>
+          <td>Month in Year Rotational Code (30-360 with intervals of 30)</td>
           <td>330</td>
         </tr>
         <tr>
