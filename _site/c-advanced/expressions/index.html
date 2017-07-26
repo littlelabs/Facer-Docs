@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="generator" content="Jekyll v3.3.1">
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/css/main.css">
+		
+		<link rel="apple-touch-icon" sizes="57x57" href="/images/manifest/apple-icon-57x57.png">
+	    <link rel="apple-touch-icon" sizes="60x60" href="/images/manifest/apple-icon-60x60.png">
+	    <link rel="apple-touch-icon" sizes="72x72" href="/images/manifest/apple-icon-72x72.png">
+	    <link rel="apple-touch-icon" sizes="76x76" href="/images/manifest/apple-icon-76x76.png">
+	    <link rel="apple-touch-icon" sizes="114x114" href="/images/manifest/apple-icon-114x114.png">
+	    <link rel="apple-touch-icon" sizes="120x120" href="/images/manifest/apple-icon-120x120.png">
+	    <link rel="apple-touch-icon" sizes="144x144" href="/images/manifest/apple-icon-144x144.png">
+	    <link rel="apple-touch-icon" sizes="152x152" href="/images/manifest/apple-icon-152x152.png">
+	    <link rel="apple-touch-icon" sizes="180x180" href="/images/manifest/apple-icon-180x180.png">
+	    <link rel="icon" type="image/png" sizes="192x192"  href="/images/manifest/android-icon-192x192.png">
+	    <link rel="icon" type="image/png" sizes="32x32" href="/images/manifest/favicon-32x32.png">
+	    <link rel="icon" type="image/png" sizes="96x96" href="/images/manifest/favicon-96x96.png">
+	    <link rel="icon" type="image/png" sizes="16x16" href="/images/manifest/favicon-16x16.png">
+	    <link rel="manifest" href="/images/manifest/manifest.json">
+	    <meta name="msapplication-TileColor" content="#ffffff">
+	    <meta name="msapplication-TileImage" content="/images/manifest/ms-icon-144x144.png">
+
+		<link type="application/atom+xml" rel="alternate" href="https://long-pig.cloudvent.net/feed.xml" title="Facer Documentation" />
+		<!-- Begin Jekyll SEO tag v2.0.0 -->
+<title>Expressions - Facer Documentation</title>
+<meta property="og:title" content="Expressions" />
+<meta name="description" content="Math expressions can take your watch face to next level. Facer supports arithmetical operations as well as a handful of math functions. You can also drop facer tags into expressions to make them even more dynamic!" />
+<meta property="og:description" content="Math expressions can take your watch face to next level. Facer supports arithmetical operations as well as a handful of math functions. You can also drop facer tags into expressions to make them even more dynamic!" />
+<link rel="canonical" href="https://long-pig.cloudvent.net/c-advanced/expressions/" />
+<meta property="og:url" content="https://long-pig.cloudvent.net/c-advanced/expressions/" />
+<meta property="og:site_name" content="Facer Documentation" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-07-26T11:58:23-07:00" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Expressions",
+    "datePublished": "2017-07-26T11:58:23-07:00",
+    "description": "Math expressions can take your watch face to next level. Facer supports arithmetical operations as well as a handful of math functions. You can also drop facer tags into expressions to make them even more dynamic!",
+    "logo": "https://long-pig.cloudvent.net/siteicon.png",
+    "url": "https://long-pig.cloudvent.net/c-advanced/expressions/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="/"><img src="/images/editorLogo470x62.png" height="31" alt="Facer Documentation logo"></a>
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav class="full-navigation">
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/">Introduction</a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/a-getting-started/facer-creator-overview/">Getting Started</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/a-getting-started/facer-creator-overview/">Facer Creator Overview</a></li>
+								
+									<li class="nav-item "><a href="/a-getting-started/designer-resources/">Designer Resources</a></li>
+								
+									<li class="nav-item "><a href="/a-getting-started/bestpractices/">Best Practices</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/b-element-types/essential-elements/">Element Types</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/b-element-types/essential-elements/">Essential Elements</a></li>
+								
+									<li class="nav-item "><a href="/b-element-types/backgrounds/">Backgrounds</a></li>
+								
+									<li class="nav-item "><a href="/b-element-types/complications/">Complications</a></li>
+								
+									<li class="nav-item "><a href="/b-element-types/custom-elements/">Custom Elements</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level current">
+							
+							<a href="/c-advanced/tags/">Advanced</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/c-advanced/tags/">Tags</a></li>
+								
+									<li class="nav-item current"><a href="/c-advanced/expressions/">Expressions</a></li>
+								
+									<li class="nav-item "><a href="/c-advanced/conditionals/">Conditionals</a></li>
+								
+									<li class="nav-item "><a href="/c-advanced/boolean-logic/">Boolean Logic</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/d-tag-and-formula/basic-recipes/">Tag & Formula Cookbook</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/d-tag-and-formula/basic-recipes/">Basic Recipes</a></li>
+								
+									<li class="nav-item "><a href="/d-tag-and-formula/the-kitchen-sink/">The Kitchen Sink</a></li>
+								
+							</ul>
+						</li>
+					
+				</ul>
+				<ul>
+					<li class="nav-item top-level ">
+						<a href="/howtocontribute">How to Contribute</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/changelog/"></a>
+					</li>
+				</ul>
+
+
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<div class='edit-github'><a href='https://github.com/littlelabs/Facer-Docs/tree/current/_docs/c-advanced/expressions.html'>Suggest an edit to this page on GitHub</a></div>
+				<h2>Advanced</h2>
+				<h3>Expressions</h3>
+			</div>
+			<article class="content">
+				<p>Math expressions can take your watch face to next level. Facer supports arithmetical operations as well as a handful of math functions. You can also drop facer tags into expressions to make them even more dynamic!</p>
+
+<p>NOTE: Math expression require parentheses. So, this will work <code>(1+1)</code> and this will not <code>1+1</code> !</p>
+
+      <h2>Operators</h2>
+      <table class="table">
+      <thead>
+        <tr>
+          <th>OPERATOR</th>
+          <th>DEFINITION</th>
+          <th>EXAMPLE EXPRESSION</th>
+          <th>EXAMPLE OUTPUT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>(3/2)</td>
+          <td>+</td>
+          <td>Addition operator</td>
+          <td>(3+2)</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>Subtraction operator</td>
+          <td>(3-2)</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>*</td>
+          <td>Multiplication operator</td>
+          <td>(3*2)</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>/</td>
+          <td>Division operator</td>
+          <td>1.5</td>
+        </tr><!-- end ngRepeat: operator in mathOperators -->
+      </tboy>
+      </table>
+
+      <hr>
+     <h2>Constants</h2>
+      <table>
+      <thead>
+        <tr>
+          <th>COSTANT</th>
+          <th>DEFINITION</th>
+          <th>EXAMPLE EXPRESSION</th>
+          <th>EXAMPLE OUTPUT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>pi</td>
+          <td>Value of Pi!</td>
+          <td>(pi)</td>
+          <td>3.141592653589793</td>
+        </tr><tr>
+          <td>e</td>
+          <td>Value of E!</td>
+          <td>(e)</td>
+          <td>2.718281828459045</td>
+        </tr><!-- end ngRepeat: constant in mathConstants -->
+      </tbody>
+      </table>
+
+      <hr>
+      <h2>Functions</h2>
+      <table>
+      <thead>
+        <tr>
+          <th>FUNCTION</th>
+          <th>DEFINITION</th>
+          <th>EXAMPLE EXPRESSION</th>
+          <th>EXAMPLE OUTPUT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>rand(min, max)</td>
+          <td>Random number generator</td>
+          <td>(rand(1, 10))</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>stRand(min, max)</td>
+          <td>Random number generator triggered every time the watch face goes between tappable active states</td>
+          <td>(stRand(1, 10))</td>
+          <td>NaN</td>
+        </tr>
+        <tr>
+          <td>wakeRand(min, max)</td>
+          <td>Random number generator that's updated every time the watch face goes into active mode</td>
+          <td>(wakeRand(1, 10))</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>abs(number)</td>
+          <td>Absolute value function</td>
+          <td>(abs(-10))</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>sin(number)</td>
+          <td>Sine function</td>
+          <td>(sin(1))</td>
+          <td>0.8414709848078965</td>
+        </tr>
+        <tr>
+          <td>cos(number)</td>
+          <td>Cosine function</td>
+          <td>(cos(1))</td>
+          <td>0.5403023058681398</td>
+        </tr>
+        <tr>
+          <td>tan(number)</td>
+          <td>Tangent function</td>
+          <td>(tan(1))</td>
+          <td>1.5574077246549023</td>
+        </tr>
+       <!--  <tr>
+          <th>asin(number)</td>
+          <td>Arcsine function</td>
+          <td>(asin(0.5))</td>
+          <td>0.5235987755982989</td>
+        </tr>
+        <tr>
+          <td>acos(number)</td>
+          <td>Arccosine function</td>
+          <td>(acos(0.5))</td>
+          <td>1.0471975511965979</td>
+        </tr>
+        <tr>
+          <td>atan(number)</td>
+          <td>Arctangent function</td>
+          <td>(atan(0.5))</td>
+          <td>0.4636476090008061</td>
+        </tr> -->
+        <!-- <tr>
+          <th>sinh(number)</td>
+          <td>Hyperbolic sine function</td>
+          <td>(sinh(1))</td>
+          <td>1.1752011936438014</td>
+        </tr>
+        <tr>
+          <td>cosh(number)</td>
+          <td>Hyperbolic cosine function</td>
+          <td>(cosh(1))</td>
+          <td>1.5430806348152437</td>
+        </tr>
+        <tr>
+          <td>tanh(number)</td>
+          <td>Hyperbolic tangent function</td>
+          <td>(tanh(1))</td>
+          <td>0.7615941559557649</td>
+        </tr> -->
+        <tr>
+          <td>round(number)</td>
+          <td>Round function (get the closest integer)</td>
+          <td>(round(1.6))</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>ceil(number)</td>
+          <td>Ceiling function (gets the next highest integer)</td>
+          <td>(pi)</td>
+          <td>3.141592653589793</td>
+        </tr>
+        <tr>
+          <td>floor(number)</td>
+          <td>Floor function - gets the next lowest integer)</td>
+          <td>(pi)</td>
+          <td>3.141592653589793</td>
+        </tr>
+        <tr>
+          <td>log(number)</td>
+          <td>Log function</td>
+          <td>(log(2))</td>
+          <td>0.6931471805599453</td>
+        </tr>
+        <tr>
+          <td>log2(number)</td>
+          <td>Log base 2 function</td>
+          <td>(log2(2))</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>log10(number)</td>
+          <td>Log base 10 function</td>
+          <td>(log10(2))</td>
+          <td>0.3010299956639812</td>
+        </tr>
+        <tr>
+          <td>sqrt(number)</td>
+          <td>Square root function</td>
+          <td>(sqrt(4))</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>cbrt(number)</td>
+          <td>Cube root function</td>
+          <td>(cbrt(8))</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>exp(number)</td>
+          <td>Gets E to the x power</td>
+          <td>(exp(2))</td>
+          <td>7.38905609893065</td>
+        </tr>
+        <tr>
+          <td>expm1(number)</td>
+          <td>Gets E to the x power minus 1</td>
+          <td>(expm1(2))</td>
+          <td>6.38905609893065</td>
+        </tr>
+        <tr>
+          <td>deg(radians)</td>
+          <td>Convert radians to degrees</td>
+          <td>(deg(1))</td>
+          <td>57.29577951308232</td>
+        </tr>
+        <tr>
+          <td>rad(degrees)</td>
+          <td>Converts degrees to radians</td>
+          <td>(rad(180))</td>
+          <td>3.141592653589793</td>
+        </tr>
+        <tr>
+          <td>clamp(current, min, max)</td>
+          <td>Restrict 'current' value to the 'min' &amp; 'max'</td>
+          <td>(clamp(#Ds#, 15, 45))</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td>squareWave(current, amplitude, period, xOffset)</td>
+          <td>Creates a square wave pattern out of 'current' value</td>
+          <td>(squareWave(#Ds#, 15, 10, 0))</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>interpAccel(current, min, max, accelerationFactor)</td>
+          <td>Creates a ease-in transition with 'current' value</td>
+          <td>(interpAccel(#Ds#, 0, 60, 2))</td>
+          <td>0.2669444444444445</td>
+        </tr>
+        <tr>
+          <td>interpDecel(current, min, max, accelerationFactor)</td>
+          <td>Creates a ease-out transition with 'current' value</td>
+          <td>(interpDecel(#Ds#, 0, 60, 2))</td>
+          <td>0.9454258487654321</td>
+        </tr>
+        <tr>
+          <td>interpAccelDecel(current, min, max)</td>
+          <td>Creates a ease-in-out transition with 'current' value</td>
+          <td>(interpAccelDecel(#Ds#, 0, 60))</td>
+          <td>0.5261679781214715</td>
+        </tr>
+        <tr>
+          <td>gyroX()</td>
+          <td>Outputs the X axis of the gyro sensor, accumulated into positional coordinates</td>
+          <td>3.9241372946780517</td>
+          <td>3.9241372946780517</td>
+        </tr>
+        <tr>
+          <td>gyroY()</td>
+          <td>Outputs the Y axis of the gyro sensor, accumulated into positional coordinates</td>
+          <td>-1.0019503694835041</td>
+          <td>-1.0019503694835041</td>
+        </tr>
+        <tr>
+          <td>accelerometerX()</td>
+          <td>Outputs the X axis of the accelerometer sensor, accumulated into positional coordinates</td>
+          <td>-5.273500685642811</td>
+          <td>-5.273500685642811</td>
+        </tr>
+        <tr>
+          <td>accelerometerY()</td>
+          <td>Outputs the Y axis of the accelerometer sensor, accumulated into positional coordinates</td>
+          <td>7.629725700177308</td>
+          <td>7.629725700177308</td>
+        </tr>
+        <tr>
+          <td>gyroRawX()</td>
+          <td>Outputs the raw X axis of the gyro sensor, which detects rotational acceleration</td>
+          <td>6.64500963775291</td>
+          <td>6.64500963775291</td>
+        </tr>
+        <tr>
+          <td>gyroRawY()</td>
+          <td>Outputs the raw Y axis of the gyro sensor, which detects rotational acceleration</td>
+          <td>-3.9204606214134596</td>
+          <td>-3.9204606214134596</td>
+        </tr>
+        <tr>
+          <td>accelerometerRawX()</td>
+          <td>Outputs the raw X axis of the accelerometer sensor</td>
+          <td>1.4595613230651239</td>
+          <td>1.4595613230651239</td>
+        </tr>
+        <tr>
+          <td>accelerometerRawY()</td>
+          <td>Outputs the raw Y axis of the accelerometer sensor</td>
+          <td>9.87964297713896</td>
+          <td>9.87964297713896</td>
+        </tr><!-- end ngRepeat: function in mathFunctions -->
+      </tbody>
+    </table>
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>

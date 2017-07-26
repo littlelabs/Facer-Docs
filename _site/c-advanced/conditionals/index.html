@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="generator" content="Jekyll v3.3.1">
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/css/main.css">
+		
+		<link rel="apple-touch-icon" sizes="57x57" href="/images/manifest/apple-icon-57x57.png">
+	    <link rel="apple-touch-icon" sizes="60x60" href="/images/manifest/apple-icon-60x60.png">
+	    <link rel="apple-touch-icon" sizes="72x72" href="/images/manifest/apple-icon-72x72.png">
+	    <link rel="apple-touch-icon" sizes="76x76" href="/images/manifest/apple-icon-76x76.png">
+	    <link rel="apple-touch-icon" sizes="114x114" href="/images/manifest/apple-icon-114x114.png">
+	    <link rel="apple-touch-icon" sizes="120x120" href="/images/manifest/apple-icon-120x120.png">
+	    <link rel="apple-touch-icon" sizes="144x144" href="/images/manifest/apple-icon-144x144.png">
+	    <link rel="apple-touch-icon" sizes="152x152" href="/images/manifest/apple-icon-152x152.png">
+	    <link rel="apple-touch-icon" sizes="180x180" href="/images/manifest/apple-icon-180x180.png">
+	    <link rel="icon" type="image/png" sizes="192x192"  href="/images/manifest/android-icon-192x192.png">
+	    <link rel="icon" type="image/png" sizes="32x32" href="/images/manifest/favicon-32x32.png">
+	    <link rel="icon" type="image/png" sizes="96x96" href="/images/manifest/favicon-96x96.png">
+	    <link rel="icon" type="image/png" sizes="16x16" href="/images/manifest/favicon-16x16.png">
+	    <link rel="manifest" href="/images/manifest/manifest.json">
+	    <meta name="msapplication-TileColor" content="#ffffff">
+	    <meta name="msapplication-TileImage" content="/images/manifest/ms-icon-144x144.png">
+
+		<link type="application/atom+xml" rel="alternate" href="https://long-pig.cloudvent.net/feed.xml" title="Facer Documentation" />
+		<!-- Begin Jekyll SEO tag v2.0.0 -->
+<title>Conditionals - Facer Documentation</title>
+<meta property="og:title" content="Conditionals" />
+<meta name="description" content="Conditionals are the most complicated and dynamic way to create a watch face." />
+<meta property="og:description" content="Conditionals are the most complicated and dynamic way to create a watch face." />
+<link rel="canonical" href="https://long-pig.cloudvent.net/c-advanced/conditionals/" />
+<meta property="og:url" content="https://long-pig.cloudvent.net/c-advanced/conditionals/" />
+<meta property="og:site_name" content="Facer Documentation" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-07-26T11:58:23-07:00" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Conditionals",
+    "datePublished": "2017-07-26T11:58:23-07:00",
+    "description": "Conditionals are the most complicated and dynamic way to create a watch face.",
+    "logo": "https://long-pig.cloudvent.net/siteicon.png",
+    "url": "https://long-pig.cloudvent.net/c-advanced/conditionals/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="/"><img src="/images/editorLogo470x62.png" height="31" alt="Facer Documentation logo"></a>
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav class="full-navigation">
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/">Introduction</a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/a-getting-started/facer-creator-overview/">Getting Started</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/a-getting-started/facer-creator-overview/">Facer Creator Overview</a></li>
+								
+									<li class="nav-item "><a href="/a-getting-started/designer-resources/">Designer Resources</a></li>
+								
+									<li class="nav-item "><a href="/a-getting-started/bestpractices/">Best Practices</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/b-element-types/essential-elements/">Element Types</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/b-element-types/essential-elements/">Essential Elements</a></li>
+								
+									<li class="nav-item "><a href="/b-element-types/backgrounds/">Backgrounds</a></li>
+								
+									<li class="nav-item "><a href="/b-element-types/complications/">Complications</a></li>
+								
+									<li class="nav-item "><a href="/b-element-types/custom-elements/">Custom Elements</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level current">
+							
+							<a href="/c-advanced/tags/">Advanced</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/c-advanced/tags/">Tags</a></li>
+								
+									<li class="nav-item "><a href="/c-advanced/expressions/">Expressions</a></li>
+								
+									<li class="nav-item current"><a href="/c-advanced/conditionals/">Conditionals</a></li>
+								
+									<li class="nav-item "><a href="/c-advanced/boolean-logic/">Boolean Logic</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/d-tag-and-formula/basic-recipes/">Tag & Formula Cookbook</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/d-tag-and-formula/basic-recipes/">Basic Recipes</a></li>
+								
+									<li class="nav-item "><a href="/d-tag-and-formula/the-kitchen-sink/">The Kitchen Sink</a></li>
+								
+							</ul>
+						</li>
+					
+				</ul>
+				<ul>
+					<li class="nav-item top-level ">
+						<a href="/howtocontribute">How to Contribute</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/changelog/"></a>
+					</li>
+				</ul>
+
+
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<div class='edit-github'><a href='https://github.com/littlelabs/Facer-Docs/tree/current/_docs/c-advanced/conditionals.html'>Suggest an edit to this page on GitHub</a></div>
+				<h2>Advanced</h2>
+				<h3>Conditionals</h3>
+			</div>
+			<article class="content">
+				<p>Conditionals are the most complicated and dynamic way to create a watch face.</p> 
+
+      <p>They take this form:</p>
+<p><code>
+$ EQUALITY TEST ? EXPRESSION IF TEST IS TRUE : EXPRESSION IF TEST IS FALSE $</code></p>
+<p>
+The first space is for our equality test, which is going to equal true or false. There are five types of operators available:
+</p>
+<table class="table">
+        <thead>
+          <tr>
+            <th>OPERATOR</th>
+            <th>DEFINITION</th>
+            <th>EXAMPLE EXPRESSION</th>
+            <th>EXAMPLE OUTPUT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- ngRepeat: operator in equalityOperators --><tr ng-repeat="operator in equalityOperators">
+            <th>=</th>
+            <td>Is equal to</td>
+            <td>(1 = 1)</td>
+            <td>true</td>
+          </tr><!-- end ngRepeat: operator in equalityOperators --><tr ng-repeat="operator in equalityOperators">
+            <th>!=</th>
+            <td>Is not equal to</td>
+            <td>(1 != 0)</td>
+            <td>true</td>
+          </tr><!-- end ngRepeat: operator in equalityOperators --><tr ng-repeat="operator in equalityOperators">
+            <th>&gt;</th>
+            <td>Is greater than</td>
+            <td>(2 &gt; 1)</td>
+            <td>true</td>
+          </tr><!-- end ngRepeat: operator in equalityOperators --><tr ng-repeat="operator in equalityOperators">
+            <th>&lt;</th>
+            <td>Is less than</td>
+            <td>(0 &lt; 1)</td>
+            <td>true</td>
+          </tr><!-- end ngRepeat: operator in equalityOperators --><tr ng-repeat="operator in equalityOperators">
+            <th>&gt;=</th>
+            <td>Is greater than or equal to</td>
+            <td>(2 &gt;= 1)</td>
+            <td>true</td>
+          </tr><!-- end ngRepeat: operator in equalityOperators --><tr ng-repeat="operator in equalityOperators">
+            <th>&lt;=</th>
+            <td>Is less than or equal to</td>
+            <td>(0 &lt;= 1)</td>
+            <td>true</td>
+          </tr><!-- end ngRepeat: operator in equalityOperators -->
+        </tbody>
+      </table>
+
+      <p>Now let's make our own. We'll fill it in step-by-step. Let's start with a blank slate. All of the those dollar signs and question marks look confusing at first, but you'll get used to them (if you have a programming background, you probably already recognize the ternary operator!):</p>
+
+<p><code>$ ____________ ? _ : _ $</code></p>
+<p>
+Now let's fill in that spot with a simple example. We're going to make an expression that will make a layer appear only before noon. This expression would be added to the opacity attribute of the layer. We'll use the #Da# and check if it's "AM":</p>
+
+<p><code>
+$ #Da# == "AM" ? _ : _ $</code></p>
+<p>
+Next, we'll fill in the EXPRESSION IF TRUE part of the conditional. When #Da# == "AM" is true, we want our layer to appear, so we'll want the opacity to be 1:</p>
+
+<p><code>$ #Da# == "AM" ? 1 : _ $</code></p>
+
+<p>
+Lastly, we'll fill in the EXPRESSION IF FALSE part of the conditional. When #Da# == "AM" is false, we want our layer to disppear, so we'll want the opacity to be 0:
+</p>
+<p><code>
+$ #Da# == "AM" ? 1 : 0 $</code>
+</p>
+<p>
+That's it! You just created your first conditional.</p>
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>
