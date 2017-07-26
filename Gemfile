@@ -4,6 +4,7 @@ gem 'bundler'
 gem 'rack-contrib'
 gem 'puma'
 gem 'jekyll', '3.3.1'
+gem 'rake'
 
 group :jekyll_plugins do
   gem 'jekyll-sitemap', '0.11.0'
