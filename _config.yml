@@ -35,6 +35,8 @@ exclude:
   - README.md
   - LICENCE
   - config.ru
+  - Rakefile
+  - vendor
 
 collections:
   docs:
