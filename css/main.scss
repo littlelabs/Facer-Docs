@@ -21,7 +21,7 @@ $space: 20px;
 
 $mobile-break: 700px;
 $full-width-break: $nav-width + ($space * 4) + $content-max-width;
-.deprecated { background: #ff0000;border-radius: 28px; padding: 2px 9px; font-color: #ff0000;}
+.deprecated { background: #ff0000; border-radius: 28px; padding: 2px 9px; color: #fff; font-size: 11px;}
 img.small{
 	width: 25%;
 	max-width: 200px;
