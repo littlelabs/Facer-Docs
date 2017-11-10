@@ -122,13 +122,18 @@ order: 0
           <td>PM</td>
         </tr>
         <tr>
+          <th>#Db#</th>
+          <td>All time tags should use this format, unless 12/24 hour tag does not work for your intent. This Hours in day using user’s preferred format (12/24) set by them.​</td>
+        <td>12</td>
+        </tr>
+        <tr>
           <th>#Dh#</th>
-          <td>Hour in Day (1-12)</td>
+              <td>Hour in Day (1-12). <strong>NOTICE</strong>: This should only be used in specific cases where #Db# does not work. </td>
           <td>12</td>
         </tr>
         <tr>
           <th>#Dk#</th>
-          <td>Hour in Day (1-24)</td>
+          <td>Hour in Day (1-24) <strong>NOTICE</strong>: This should only be used in specific cases where #Db# does not work.</td>
           <td>12</td>
         </tr>
         <tr>
@@ -140,11 +145,6 @@ order: 0
           <th>#DK#</th>
           <td>Hour in Day (0-11)</td>
           <td>0</td>
-        </tr>
-        <tr>
-          <th>#Db#</th>
-          <td>Hours in day using user’s preferred format (12/24)​</td>
-          <td>12</td>
         </tr>
         <!-- end ngRepeat: tag in tags --><!-- ngIf: !tag.hidden --><tr>
           <th>#DHZ#</th>
