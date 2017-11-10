@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="generator" content="Jekyll v3.3.1">
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/css/main.css">
+		
+		<link rel="apple-touch-icon" sizes="57x57" href="/images/manifest/apple-icon-57x57.png">
+	    <link rel="apple-touch-icon" sizes="60x60" href="/images/manifest/apple-icon-60x60.png">
+	    <link rel="apple-touch-icon" sizes="72x72" href="/images/manifest/apple-icon-72x72.png">
+	    <link rel="apple-touch-icon" sizes="76x76" href="/images/manifest/apple-icon-76x76.png">
+	    <link rel="apple-touch-icon" sizes="114x114" href="/images/manifest/apple-icon-114x114.png">
+	    <link rel="apple-touch-icon" sizes="120x120" href="/images/manifest/apple-icon-120x120.png">
+	    <link rel="apple-touch-icon" sizes="144x144" href="/images/manifest/apple-icon-144x144.png">
+	    <link rel="apple-touch-icon" sizes="152x152" href="/images/manifest/apple-icon-152x152.png">
+	    <link rel="apple-touch-icon" sizes="180x180" href="/images/manifest/apple-icon-180x180.png">
+	    <link rel="icon" type="image/png" sizes="192x192"  href="/images/manifest/android-icon-192x192.png">
+	    <link rel="icon" type="image/png" sizes="32x32" href="/images/manifest/favicon-32x32.png">
+	    <link rel="icon" type="image/png" sizes="96x96" href="/images/manifest/favicon-96x96.png">
+	    <link rel="icon" type="image/png" sizes="16x16" href="/images/manifest/favicon-16x16.png">
+	    <link rel="manifest" href="/images/manifest/manifest.json">
+	    <meta name="msapplication-TileColor" content="#ffffff">
+	    <meta name="msapplication-TileImage" content="/images/manifest/ms-icon-144x144.png">
+
+		<link type="application/atom+xml" rel="alternate" href="https://long-pig.cloudvent.net/feed.xml" title="Facer Documentation" />
+		<!-- Begin Jekyll SEO tag v2.0.0 -->
+<title>The Kitchen Sink - Facer Documentation</title>
+<meta property="og:title" content="The Kitchen Sink" />
+<meta name="description" content="&lt;p&gt;In order to help advanced users with a series of samples of possibilities, we&#39;ve created the &#39;Kitchen Sink&#39; watch face. This watch face isn&#39;t very useful for telling time, but you can use Inspection Mode to see how we achieve certain animations and effects here at Facer HQ. &lt;/p&gt;&lt;p&gt;You can open the watch in inspector mode to see how it all works: &lt;a href=&quot;https://www.facer.io/watchface/1WkGlWDQzf/inspect&quot;&gt;https://www.facer.io/watchface/1WkGlWDQzf/inspect&lt;/a&gt; Feel free to make changes, nothing will get saved so you&#39;re free to play!&lt;/p&gt;&lt;p&gt;We&#39;ll go through a couple of specific expressions used in the watch face:&lt;/p&gt;" />
+<meta property="og:description" content="&lt;p&gt;In order to help advanced users with a series of samples of possibilities, we&#39;ve created the &#39;Kitchen Sink&#39; watch face. This watch face isn&#39;t very useful for telling time, but you can use Inspection Mode to see how we achieve certain animations and effects here at Facer HQ. &lt;/p&gt;&lt;p&gt;You can open the watch in inspector mode to see how it all works: &lt;a href=&quot;https://www.facer.io/watchface/1WkGlWDQzf/inspect&quot;&gt;https://www.facer.io/watchface/1WkGlWDQzf/inspect&lt;/a&gt; Feel free to make changes, nothing will get saved so you&#39;re free to play!&lt;/p&gt;&lt;p&gt;We&#39;ll go through a couple of specific expressions used in the watch face:&lt;/p&gt;" />
+<link rel="canonical" href="https://long-pig.cloudvent.net/d-tag-and-formula/the-kitchen-sink/" />
+<meta property="og:url" content="https://long-pig.cloudvent.net/d-tag-and-formula/the-kitchen-sink/" />
+<meta property="og:site_name" content="Facer Documentation" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-07-26T11:58:23-07:00" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "The Kitchen Sink",
+    "datePublished": "2017-07-26T11:58:23-07:00",
+    "description": "&lt;p&gt;In order to help advanced users with a series of samples of possibilities, we&#39;ve created the &#39;Kitchen Sink&#39; watch face. This watch face isn&#39;t very useful for telling time, but you can use Inspection Mode to see how we achieve certain animations and effects here at Facer HQ. &lt;/p&gt;&lt;p&gt;You can open the watch in inspector mode to see how it all works: &lt;a href=&quot;https://www.facer.io/watchface/1WkGlWDQzf/inspect&quot;&gt;https://www.facer.io/watchface/1WkGlWDQzf/inspect&lt;/a&gt; Feel free to make changes, nothing will get saved so you&#39;re free to play!&lt;/p&gt;&lt;p&gt;We&#39;ll go through a couple of specific expressions used in the watch face:&lt;/p&gt;",
+    "logo": "https://long-pig.cloudvent.net/siteicon.png",
+    "url": "https://long-pig.cloudvent.net/d-tag-and-formula/the-kitchen-sink/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="/"><img src="/images/editorLogo470x62.png" height="31" alt="Facer Documentation logo"></a>
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav class="full-navigation">
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/">Introduction</a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/a-getting-started/facer-creator-overview/">Getting Started</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/a-getting-started/facer-creator-overview/">Facer Creator Overview</a></li>
+								
+									<li class="nav-item "><a href="/a-getting-started/designer-resources/">Designer Resources</a></li>
+								
+									<li class="nav-item "><a href="/a-getting-started/bestpractices/">Best Practices</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/b-element-types/essential-elements/">Element Types</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/b-element-types/essential-elements/">Essential Elements</a></li>
+								
+									<li class="nav-item "><a href="/b-element-types/backgrounds/">Backgrounds</a></li>
+								
+									<li class="nav-item "><a href="/b-element-types/complications/">Complications</a></li>
+								
+									<li class="nav-item "><a href="/b-element-types/custom-elements/">Custom Elements</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/c-advanced/tags/">Advanced</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/c-advanced/tags/">Tags</a></li>
+								
+									<li class="nav-item "><a href="/c-advanced/expressions/">Expressions</a></li>
+								
+									<li class="nav-item "><a href="/c-advanced/conditionals/">Conditionals</a></li>
+								
+									<li class="nav-item "><a href="/c-advanced/boolean-logic/">Boolean Logic</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level current">
+							
+							<a href="/d-tag-and-formula/basic-recipes/">Tag & Formula Cookbook</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/d-tag-and-formula/basic-recipes/">Basic Recipes</a></li>
+								
+									<li class="nav-item current"><a href="/d-tag-and-formula/the-kitchen-sink/">The Kitchen Sink</a></li>
+								
+							</ul>
+						</li>
+					
+				</ul>
+				<ul>
+					<li class="nav-item top-level ">
+						<a href="/howtocontribute">How to Contribute</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/changelog/"></a>
+					</li>
+				</ul>
+
+
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<div class='edit-github'><a href='https://github.com/littlelabs/Facer-Docs/tree/current/_docs/d-tag-and-formula/the-kitchen-sink.html'>Suggest an edit to this page on GitHub</a></div>
+				<h2>Tag & Formula Cookbook</h2>
+				<h3>The Kitchen Sink</h3>
+			</div>
+			<article class="content">
+				    <p>In order to help advanced users with a series of samples of possibilities, we've created the 'Kitchen Sink' watch face. This watch face isn't very useful for telling time, but you can use Inspection Mode to see how we achieve certain animations and effects here at Facer HQ. </p>
+    <p>You can open the watch in inspector mode to see how it all works: <a href="https://www.facer.io/watchface/1WkGlWDQzf/inspect">https://www.facer.io/watchface/1WkGlWDQzf/inspect</a> Feel free to make changes, nothing will get saved so you're free to play!
+    </p>
+    <p>We'll go through a couple of specific expressions used in the watch face:</p>
+
+    <!-- <ul>
+      <li><a href="#fade-in">Fade In / Fade Out</a></li>
+      <li><a href="#pendulum">Pendulum Motion</a></li>
+      <li><a href="#breathing">"Breathing" Motion</a></li>
+      <li><a href="#orbit">Basic Orbit</a></li>
+    </ul> -->
+    
+      <a id="fade-in"></a>
+      <h2>Fade In / Fade Out</h2>
+      <p>
+        These recipes cover 3 behaviors: Fade in when the watch wakes up, Fade out when the watch wakes up, or Fade In/Out on a loop.
+        <video autoplay="autoplay" loop="loop" width="100%">
+            <source src="/images/FadeSample.mp4" type="video/mp4">
+        </video>
+
+        <em>Note: To see the fade in &amp; fade out elements in our sample, you'll need to toggle between Active/Dim mode while the time machine is running at normal speed.</em>
+      </p>
+      
+      <hr>
+
+      <h3>Recipe for Fade In When the Watch Wakes:</h3>
+      <p>
+        <strong>Property: Transparency</strong><br>
+        <code>((interpAccel(#DWE#, 0, 2, 2)*100))</code>
+      </p>
+
+      <hr>
+
+      <h3>Recipe for Fade Out When the Watch Wakes:</h3>
+      <p>
+        <strong>Property: Transparency</strong><br>
+        <code>(100-(interpAccel(#DWE#, 0, 2, 2)*100))</code>
+      </p>
+      
+      <hr>
+
+      <h3>Recipe for Looping Fade In &amp; Fade Out:</h3>
+      <p>
+       
+        <strong>Property: Transparency</strong><br>
+        <code>((sin(#DWE#*5))*50+50)</code>
+      </p>
+<hr>
+    <a id="pendulum"></a>
+    <h2>Pendulum Motion</h2>
+    <p>Allow an element to move as if swinging from a string
+      <video autoplay="autoplay" loop="loop" width="100%">
+        <source src="/images/Pendulum.mp4" type="video/mp4">
+      </video>
+      </p>
+
+      <hr>
+
+    <h3>Recipe for Pendulum Motion:</h3>
+    <p>
+      <strong>Property: Rotation</strong>
+      <code>(sin(#DWE#*2)*50)</code>
+    </p>
+<hr>
+    <a id="breathing"></a>
+    <h2>"Breathing" Motion</h2>
+    <p>Have an element cycle properties easing in &amp; out, to create a 'breathing' effect
+      <video autoplay="autoplay" loop="loop" width="100%">
+        <source src="/images/Breathe.mp4" type="video/mp4">
+      </video>
+      </p>
+
+      <hr>
+
+    <h3>Recipe for Breathing Opacity:</h3>
+    <p>
+      <strong>Property: Transparency</strong>
+      <code>((sin(#DWE#*2)*60)+50)</code>
+    </p>
+
+    <hr>
+
+    <h3>Recipe for Breathing Size:</h3>
+    <p>
+      <strong>Property: Radius</strong>
+      <code>((sin(#DWE#*2)*40)+50)</code>
+    </p>
+<hr>
+    <a id="orbit"></a>
+    <h2>Basic Orbit</h2>
+    <p>Orbit an element in a circular motion
+      <video autoplay="autoplay" loop="loop" width="100%">
+        <source src="/images/Orbit.mp4" type="video/mp4">
+      </video>
+      </p>
+
+      <hr>
+
+    <h3>Recipe for Basic Orbit:</h3>
+    <p>
+      <strong>Property: X Position</strong>
+      <code>(160 + sin(#DWFSS#/4)*50)</code>
+    </p>
+    <p>
+      <strong>Property: Y Position</strong>
+      <code>(160 + cos(#DWFSS#/4)*50)</code>
+    </p>
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>

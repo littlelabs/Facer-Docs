@@ -23,34 +23,34 @@ The first space is for our equality test, which is going to equal true or false.
         </thead>
         <tbody>
           <!-- ngRepeat: operator in equalityOperators --><tr ng-repeat="operator in equalityOperators">
-            <th>=</th>
+            <th>= or ==</th>
             <td>Is equal to</td>
-            <td>(1 = 1)</td>
+            <td>(1=1) or (1==1)</td>
             <td>true</td>
           </tr><!-- end ngRepeat: operator in equalityOperators --><tr ng-repeat="operator in equalityOperators">
             <th>!=</th>
             <td>Is not equal to</td>
-            <td>(1 != 0)</td>
+            <td>(1!=0)</td>
             <td>true</td>
           </tr><!-- end ngRepeat: operator in equalityOperators --><tr ng-repeat="operator in equalityOperators">
             <th>&gt;</th>
             <td>Is greater than</td>
-            <td>(2 &gt; 1)</td>
+            <td>(2&gt;1)</td>
             <td>true</td>
           </tr><!-- end ngRepeat: operator in equalityOperators --><tr ng-repeat="operator in equalityOperators">
             <th>&lt;</th>
             <td>Is less than</td>
-            <td>(0 &lt; 1)</td>
+            <td>(0&lt;1)</td>
             <td>true</td>
           </tr><!-- end ngRepeat: operator in equalityOperators --><tr ng-repeat="operator in equalityOperators">
             <th>&gt;=</th>
             <td>Is greater than or equal to</td>
-            <td>(2 &gt;= 1)</td>
+            <td>(2&gt;=1)</td>
             <td>true</td>
           </tr><!-- end ngRepeat: operator in equalityOperators --><tr ng-repeat="operator in equalityOperators">
             <th>&lt;=</th>
             <td>Is less than or equal to</td>
-            <td>(0 &lt;= 1)</td>
+            <td>(0&lt;=1)</td>
             <td>true</td>
           </tr><!-- end ngRepeat: operator in equalityOperators -->
         </tbody>
@@ -58,22 +58,27 @@ The first space is for our equality test, which is going to equal true or false.
 
       <p>Now let's make our own. We'll fill it in step-by-step. Let's start with a blank slate. All of the those dollar signs and question marks look confusing at first, but you'll get used to them (if you have a programming background, you probably already recognize the ternary operator!):</p>
 
-<p><code>$ ____________ ? _ : _ $</code></p>
+<p><code>$____________?_:_$</code></p>
 <p>
 Now let's fill in that spot with a simple example. We're going to make an expression that will make a layer appear only before noon. This expression would be added to the opacity attribute of the layer. We'll use the #Da# and check if it's "AM":</p>
 
 <p><code>
-$ #Da# == "AM" ? _ : _ $</code></p>
+$#Da#==AM?_:_$</code></p>
 <p>
 Next, we'll fill in the EXPRESSION IF TRUE part of the conditional. When #Da# == "AM" is true, we want our layer to appear, so we'll want the opacity to be 1:</p>
 
-<p><code>$ #Da# == "AM" ? 1 : _ $</code></p>
+<p><code>$#Da#==AM?1:_$</code></p>
 
 <p>
 Lastly, we'll fill in the EXPRESSION IF FALSE part of the conditional. When #Da# == "AM" is false, we want our layer to disppear, so we'll want the opacity to be 0:
 </p>
 <p><code>
-$ #Da# == "AM" ? 1 : 0 $</code>
+$#Da#==AM?1:0$</code>
 </p>
 <p>
-That's it! You just created your first conditional.</p>
+That's it! You just created your first conditional.</p> 
+
+<p>Now some advice:</p>
+
+<p>Don't use " marks before and after texts used in conditions.</p>
+<p>Don't use spaces (" ") before and after part of conditions (wrong: <code>$ #Da# == AM ? 1 : 0 $</code> right: <code>$#Da#==AM?1:0$</code>)</p>

@@ -33,6 +33,10 @@ GEM
     mercenary (0.3.6)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
+    puma (3.9.1)
+    rack (1.6.8)
+    rack-contrib (1.5.0)
+      rack (~> 1.4)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -44,10 +48,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
   jekyll (= 3.3.1)
   jekyll-feed (= 0.7.2)
   jekyll-seo-tag (= 2.0.0)
   jekyll-sitemap (= 0.11.0)
+  puma
+  rack-contrib
 
 BUNDLED WITH
-   1.12.5
+   1.15.0

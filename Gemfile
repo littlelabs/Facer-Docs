@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'bundler'
+gem 'rack-contrib'
+gem 'puma'
 gem 'jekyll', '3.3.1'
 
 group :jekyll_plugins do

@@ -34,6 +34,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
+  - config.ru
 
 collections:
   docs:
