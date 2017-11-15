@@ -7,9 +7,9 @@ order: 3
 When designing in Photoshop/Illustrator or other programs, make sure you are always locking to pixels and on even numbers. Also make sure the minimum pixel stroke is 2px.
 
 #### Incorrect
-![alt text]({{ site.baseurl }}/images/bestpractices/incorrect.png "Title Text")
+![incorrect use]({{ site.baseurl }}/images/bestpractices/incorrect.png "Incorrect use")
 #### Correct
-![alt text]({{ site.baseurl }}/images//bestpractices/correct.png "Title Text")
+![correct use]({{ site.baseurl }}/images//bestpractices/correct.png "Correct use")
 
 #### Good performance
 Make sure all your layers are compressed into a single layer if they are part of the background. The less layers you have the quicker it will sync and smoother it will run.
@@ -33,5 +33,3 @@ Your description should describe why the user would want to use it. This is all 
 
 ### Keep it original
 There is nothing wrong with being inspired by other designs. However it is always good to keep your designs original. Just remaking classics might look ok, but eventually this will cheapen your brand and will be obvious the concepts aren't original.
-
-
