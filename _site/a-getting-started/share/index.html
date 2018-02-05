@@ -28,12 +28,12 @@
 
 		<link type="application/atom+xml" rel="alternate" href="https://long-pig.cloudvent.net/feed.xml" title="Facer Documentation" />
 		<!-- Begin Jekyll SEO tag v2.0.0 -->
-<title>Tutorials - Facer Documentation</title>
-<meta property="og:title" content="Tutorials" />
+<title>Share Your Design - Facer Documentation</title>
+<meta property="og:title" content="Share Your Design" />
 <meta name="description" content="" />
 <meta property="og:description" content="" />
-<link rel="canonical" href="https://long-pig.cloudvent.net/a-getting-started/tutorials/" />
-<meta property="og:url" content="https://long-pig.cloudvent.net/a-getting-started/tutorials/" />
+<link rel="canonical" href="https://long-pig.cloudvent.net/a-getting-started/share/" />
+<meta property="og:url" content="https://long-pig.cloudvent.net/a-getting-started/share/" />
 <meta property="og:site_name" content="Facer Documentation" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-02-05T11:23:48-08:00" />
@@ -41,11 +41,11 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Tutorials",
+    "headline": "Share Your Design",
     "datePublished": "2018-02-05T11:23:48-08:00",
     "description": "",
     "logo": "https://long-pig.cloudvent.net/siteicon.png",
-    "url": "https://long-pig.cloudvent.net/a-getting-started/tutorials/"
+    "url": "https://long-pig.cloudvent.net/a-getting-started/share/"
   }
 </script>
 <!-- End Jekyll SEO tag -->
@@ -76,7 +76,7 @@
 				<ul>
 					
 					
-						<li class="nav-item top-level current">
+						<li class="nav-item top-level ">
 							
 							<a href="/a-getting-started/facer-creator-overview/">Getting Started</a>
 							<ul>
@@ -85,17 +85,17 @@
 								
 									<li class="nav-item "><a href="/a-getting-started/bestpractices/">Best Practices</a></li>
 								
-									<li class="nav-item current"><a href="/a-getting-started/tutorials/">Tutorials</a></li>
+									<li class="nav-item "><a href="/a-getting-started/tutorials/">Tutorials</a></li>
 								
 							</ul>
 						</li>
 					
-						<li class="nav-item top-level ">
+						<li class="nav-item top-level current">
 							
 							<a href="/a-getting-started/share/">Designer Resources</a>
 							<ul>
 								
-									<li class="nav-item "><a href="/a-getting-started/share/">Share Your Design</a></li>
+									<li class="nav-item current"><a href="/a-getting-started/share/">Share Your Design</a></li>
 								
 									<li class="nav-item "><a href="/a-getting-started/designer-resources/">Watch Face Design</a></li>
 								
@@ -165,19 +165,90 @@
 
 		<section class="main">
 			<div class="page-header">
-				<div class='edit-github'><a href='https://github.com/littlelabs/Facer-Docs/tree/current/_docs/a-getting-started/tutorials.md'>Suggest an edit to this page on GitHub</a></div>
-				<h2>Getting Started</h2>
-				<h3>Tutorials</h3>
+				<div class='edit-github'><a href='https://github.com/littlelabs/Facer-Docs/tree/current/_docs/a-getting-started/share.html'>Suggest an edit to this page on GitHub</a></div>
+				<h2>Designer Resources</h2>
+				<h3>Share Your Design</h3>
 			</div>
 			<article class="content">
-				<p><img src="/images/tutorials.jpg" alt="Tutorials" title="Incorrect use" /></p>
+				<style>
+	.instruction {
+		margin-bottom: 30px;
+	}
 
-<p>Facer Academy is here to help you learn how to better design watch faces. Learn from the masters by diving in deep or just learn how to up your watch face design game. We are always open for submissions, so feel free to let us know if you want to write a tutorial. Tutorial watch faces are featured regularly, this is a great way to start a following!</p>
+	.instruction-with-image {
+		height: 325px; 
+	}
 
-<p><a href="https://news.facer.io/tutorials/home">Check out existing tutorials</a></p>
+	.instruction-image {
+		float: right;
+		height: 300px;
+		width: 300px;
+		border: 1px #808080 solid;
+    	border-radius: 5px;
+    	margin-top: -30px;
+	}
 
-<p><a href="http://community.facer.io/t/how-to-submit-a-tutorial/12914">Submit your tutorial here</a></p>
+	.text-green {
+		color: #09f803;
+	}
+</style>
 
+<p>
+	<iframe src="https://staging.facer.io/watchface/Hbhfdn1EDW/embed?autorun=false" width="435" height="580" style="border:0;"></iframe>
+	<iframe src="https://staging.facer.io/watchface/DKlDc6DZNc/embed?autorun=false" width="435" height="580" style="border:0;"></iframe>
+</p>
+
+<h2>Watchface Embed</h2>
+
+<p>
+	Want to show off your new creation or someone else's?  The watchface embed allows you to embed an awesome preview of the face on any website.  Here are the steps to get the embed html code:
+</p>
+<p>
+	<div class="instruction">
+		<h4>1. Go to facer.io and find the watchface you want to share</h4>
+	</div>
+
+	<div class="instruction instruction-with-image">
+		<h4>2. Click the Share Icon</h4>
+		<img class="instruction-image" src="/images/share-step-1.jpg">
+	</div>
+
+	<div class="instruction instruction-with-image">
+		<h4>3. Copy the embed code</h4>
+		<img class="instruction-image" src="/images/share-step-2.jpg">
+	</div>
+</p>
+
+<h3>Advanced Options</h3>
+
+<h4>Static Embed</h4>
+	<p>
+		If you're using multiple embeds on one page, it can be a good idea to use the static version, which loads faster.  To load the static version, add a query parameters to the iframe URL: <code class="text-green">?autorun=false</code>
+	</p>
+
+	<h5>Example</h5>
+	<p>
+		<code>&lt;iframe src="https://staging.facer.io/watchface/Hbhfdn1EDW/embed<b class="text-green">?autorun=false</b>" width="435" height="580" style="border:0;"&gt;&lt;/iframe&gt;</code>
+	</p>
+
+	<iframe src="https://staging.facer.io/watchface/Hbhfdn1EDW/embed?autorun=false" width="435" height="580" style="border:0;"></iframe>
+	<iframe src="https://staging.facer.io/watchface/DKlDc6DZNc/embed?autorun=false" width="435" height="580" style="border:0;"></iframe>
+
+<hr>
+
+<h4>Dynamic Embed (default)</h4>
+	<p>
+		The dynamic embed shows the watch face in all its glory, fully running when it loads.  This version is the default, but you can explicitly specify it by adding this query parameter to the iframe URL: <code class="text-green">?autorun=true</code>
+	</p>
+	<h5>Example</h5>
+	<p>
+		<code>&lt;iframe src="https://staging.facer.io/watchface/fXAIzwyvAh/embed<b class="text-green">?autorun=true</b>" width="435" height="580" style="border:0;"&gt;&lt;/iframe&gt;</code>
+	</p>
+
+	<iframe src="https://staging.facer.io/watchface/fXAIzwyvAh/embed?autorun=true" width="435" height="580" style="border:0;"></iframe>
+	<iframe src="https://staging.facer.io/watchface/jf0MVoZef4/embed?autorun=true" width="435" height="580" style="border:0;"></iframe>
+
+<hr>
 			</article>
 		</section>
 
