@@ -1,0 +1,84 @@
+---
+title: Share Your Design
+category: Designer Resources
+order: 0
+---
+<style>
+	.instruction {
+		margin-bottom: 30px;
+	}
+
+	.instruction-with-image {
+		height: 325px; 
+	}
+
+	.instruction-image {
+		float: right;
+		height: 300px;
+		width: 300px;
+		border: 1px #808080 solid;
+    	border-radius: 5px;
+    	margin-top: -30px;
+	}
+
+	.text-green {
+		color: #09f803;
+	}
+</style>
+
+<p>
+	<iframe src="https://staging.facer.io/watchface/Hbhfdn1EDW/embed?autorun=false" width="435" height="580" style="border:0;"></iframe>
+	<iframe src="https://staging.facer.io/watchface/DKlDc6DZNc/embed?autorun=false" width="435" height="580" style="border:0;"></iframe>
+</p>
+
+<h2>Watchface Embed</h2>
+
+<p>
+	Want to show off your new creation or someone else's?  The watchface embed allows you to embed an awesome preview of the face on any website.  Here are the steps to get the embed html code:
+</p>
+<p>
+	<div class="instruction">
+		<h4>1. Go to facer.io and find the watchface you want to share</h4>
+	</div>
+
+	<div class="instruction instruction-with-image">
+		<h4>2. Click the Share Icon</h4>
+		<img class="instruction-image" src="{{ site.baseurl }}/images/share-step-1.jpg">
+	</div>
+
+	<div class="instruction instruction-with-image">
+		<h4>3. Copy the embed code</h4>
+		<img class="instruction-image" src="{{ site.baseurl }}/images/share-step-2.jpg">
+	</div>
+</p>
+
+<h3>Advanced Options</h3>
+
+<h4>Static Embed</h4>
+	<p>
+		If you're using multiple embeds on one page, it can be a good idea to use the static version, which loads faster.  To load the static version, add a query parameters to the iframe URL: <code class="text-green">?autorun=false</code>
+	</p>
+
+	<h5>Example</h5>
+	<p>
+		<code>&lt;iframe src="https://staging.facer.io/watchface/Hbhfdn1EDW/embed<b class="text-green">?autorun=false</b>" width="435" height="580" style="border:0;"&gt;&lt;/iframe&gt;</code>
+	</p>
+
+	<iframe src="https://staging.facer.io/watchface/Hbhfdn1EDW/embed?autorun=false" width="435" height="580" style="border:0;"></iframe>
+	<iframe src="https://staging.facer.io/watchface/DKlDc6DZNc/embed?autorun=false" width="435" height="580" style="border:0;"></iframe>
+
+<hr>
+
+<h4>Dynamic Embed (default)</h4>
+	<p>
+		The dynamic embed shows the watch face in all its glory, fully running when it loads.  This version is the default, but you can explicitly specify it by adding this query parameter to the iframe URL: <code class="text-green">?autorun=true</code>
+	</p>
+	<h5>Example</h5>
+	<p>
+		<code>&lt;iframe src="https://staging.facer.io/watchface/fXAIzwyvAh/embed<b class="text-green">?autorun=true</b>" width="435" height="580" style="border:0;"&gt;&lt;/iframe&gt;</code>
+	</p>
+
+	<iframe src="https://staging.facer.io/watchface/fXAIzwyvAh/embed?autorun=true" width="435" height="580" style="border:0;"></iframe>
+	<iframe src="https://staging.facer.io/watchface/jf0MVoZef4/embed?autorun=true" width="435" height="580" style="border:0;"></iframe>
+
+<hr>
