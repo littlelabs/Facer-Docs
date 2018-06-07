@@ -56,7 +56,7 @@ The first space is for our equality test, which is going to equal true or false.
         </tbody>
       </table>
 
-      <p>Now let's make our own. We'll fill it in step-by-step. Let's start with a blank slate. All of the those dollar signs and question marks look confusing at first, but you'll get used to them (if you have a programming background, you probably already recognize the ternary operator!):</p>
+      <p>Now let's make our own. We'll fill it in step-by-step. Let's start with a blank slate. We'll develop a conditional to use for the Transparency attribute. All of the those dollar signs and question marks look confusing at first, but you'll get used to them (if you have a programming background, you probably already recognize the ternary operator!):</p>
 
 <p><code>$____________?_:_$</code></p>
 <p>
@@ -65,15 +65,15 @@ Now let's fill in that spot with a simple example. We're going to make an expres
 <p><code>
 $#Da#==AM?_:_$</code></p>
 <p>
-Next, we'll fill in the EXPRESSION IF TRUE part of the conditional. When #Da# == "AM" is true, we want our layer to appear, so we'll want the opacity to be 1:</p>
+Next, we'll fill in the EXPRESSION IF TRUE part of the conditional. When #Da# == "AM" is true, we want our layer to appear, so we'll want the opacity to be 100:</p>
 
-<p><code>$#Da#==AM?1:_$</code></p>
+<p><code>$#Da#==AM?100:_$</code></p>
 
 <p>
 Lastly, we'll fill in the EXPRESSION IF FALSE part of the conditional. When #Da# == "AM" is false, we want our layer to disppear, so we'll want the opacity to be 0:
 </p>
 <p><code>
-$#Da#==AM?1:0$</code>
+$#Da#==AM?100:0$</code>
 </p>
 <p>
 That's it! You just created your first conditional.</p> 
@@ -81,4 +81,4 @@ That's it! You just created your first conditional.</p>
 <p>Now some advice:</p>
 
 <p>Don't use " marks before and after texts used in conditions.</p>
-<p>Don't use spaces (" ") before and after part of conditions (wrong: <code>$ #Da# == AM ? 1 : 0 $</code> right: <code>$#Da#==AM?1:0$</code>)</p>
+<p>Don't use spaces (" ") before and after part of conditions (wrong: <code>$ #Da# == AM ? 100 : 0 $</code> right: <code>$#Da#==AM?100:0$</code>)</p>
